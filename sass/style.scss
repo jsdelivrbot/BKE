@@ -1,0 +1,189 @@
+@import "settings";
+@import "custom-mixin";
+@import "slider";
+@import "CTA";
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{font-family: $title-font !important}
+
+li{font-family: $body-font !important}
+
+i{ font-style: normal !important;}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}   
+
+.container-fluid{
+    padding: 0px !important;
+}
+
+
+.topBanner {
+    width: 100%;
+    height: 40px;
+    background-color: $primary-color;
+    padding-top: 0.5%;
+
+    #bannerLeft{
+        #sectionsLeft{
+            margin-left: 10% !important;
+        }
+        @media screen and (max-width: $iphonePlus) {
+            display: none;
+        }
+    }
+    
+
+    #bannerRight {
+        position: relative;
+        #sectionsRight {
+            display: -webkit-inline-box;        
+            position: absolute;
+            right: 0px;
+            margin-right: 10%;
+            padding-right: 15px;
+            #left{
+                margin-left: 0px !important;
+            }
+            @media screen and (max-width: $iphonePlus) {
+                right: 20%;
+                margin-right:0px !important;
+                padding-right: 0px !important;
+            }
+            @media screen and (max-width: $iphone) {
+                right: 15%;
+                margin-right:0px !important;
+                padding-right: 0px !important;
+            }
+        }
+    }
+
+    #phone:before {
+        @include set-icon($fa-var-mobile-phone, $white-color, 1.2rem);        
+        vertical-align: middle;    
+
+        @media screen and (max-width: $ipad) {
+            font-size: 1rem;
+        }
+    }
+    
+    #mapMarker:before {
+        @include set-icon($fa-var-map-marker, $white-color, 1.2rem);        
+        vertical-align: middle;
+        padding-left: 1rem;
+        @media screen and (max-width: $ipad) {
+            font-size: 1rem;
+        }
+    }
+
+    #flag:before {
+        @include set-icon($fa-var-flag-checkered, $white-color, 1.2rem);        
+        vertical-align: middle;
+        @media screen and (max-width: $ipad) {
+            font-size: 1rem;
+        }
+        @media screen and (max-width: $iphone5) {
+            font-size: 0.6rem;
+        }
+    }
+
+    #facebook:before{
+        @include set-icon($fa-var-facebook, $white-color, 1rem);        
+        vertical-align: middle;
+        @media screen and (max-width: $ipad) {
+            font-size: 0.7rem;
+        }
+        @media screen and (max-width: $iphone5) {
+            font-size: 0.5rem;
+        }
+    }
+
+    #instagram:before {
+        @include set-icon($fa-var-instagram, $white-color, 1rem);        
+        vertical-align: middle;
+        @media screen and (max-width: $ipad) {
+            font-size: 0.7rem;
+        }
+        @media screen and (max-width: $iphone5) {
+            font-size: 0.5rem;
+        }
+    }
+
+    #twitter:before{
+        @include set-icon($fa-var-twitter, $white-color, 1rem);        
+        vertical-align: middle;
+        @media screen and (max-width: $ipad) {
+            font-size: 0.7rem;
+        }
+        @media screen and (max-width: $iphone5) {
+            font-size: 0.5rem;
+        }
+    }
+
+    #snapchat:before{
+        @include set-icon($fa-var-snapchat, $white-color, 1rem);        
+        vertical-align: middle;
+        @media screen and (max-width: $ipad) {
+            font-size: 0.7rem;
+        }
+        @media screen and (max-width: $iphone5) {
+            font-size: 0.5rem;
+        }
+    }
+    
+    span{
+        color: $white-color;
+        @include set-font($body-font, 700);
+        font-size: 0.8rem;
+        padding-left: 0.8rem;
+
+        @media screen and (max-width: $ipad) {
+            font-size: 0.6rem;
+            padding-left: 5px !important;
+        }
+        @media screen and (max-width: $iphone5) {
+            font-size: 0.5rem;
+        }
+    }
+}
+    
+
+.navbar {
+    background-color: $secondary-color !important;
+    li{@include set-font($body-font, 700);}
+    a{
+        color: $white-color !important;
+        @media screen and (max-width: 991px) {
+            text-align: center;
+        }
+    }
+    .dropdown-menu{
+        background-color: $secondary-color !important;
+        a{
+            color: $white-color !important;
+            &:hover {
+                color:$secondary-color !important;
+            }
+        }
+    }
+
+    .navbar-toggler{
+        color: $white-color !important;
+        border-color: $white-color - 50 !important;
+    }
+    #toggleIcon:before {
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        @include set-icon($fa-var-navicon, $white-color, 1.7rem);
+    }
+} 

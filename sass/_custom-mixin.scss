@@ -1,0 +1,19 @@
+@mixin set-icon($icon-type, $color, $size){
+    content: $icon-type;
+    font-family: "Fontawesome";
+    color: $color;
+    font-size: $size;
+}
+
+@mixin set-font($type, $weight){
+    font-family: $type;
+    font-weight: $weight;
+}
+
+@mixin set-ease-in-out-transition($speed){
+    -webkit-transition: all $speed ease-in-out;
+    -moz-transition: all $speed ease-in-out;
+    -ms-transition: all $speed ease-in-out;
+    -o-transition: all $speed ease-in-out;
+    transition: all $speed ease-in-out;
+}

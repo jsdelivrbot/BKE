@@ -1,0 +1,40 @@
+@import "settings";
+
+.cta {
+    height: 100px;
+    background-color: $light-grey-color;
+    h1{
+        line-height: 6rem;
+        float: right;
+        @media screen and(max-width: $ipad) {
+            font-size: 1.5rem;
+            text-align: center;      
+        }
+        @media screen and(max-width: $iphonePlus) {
+            font-size: 1rem;
+            text-align: center;  
+            float: none;    
+            line-height: 4rem;
+        }
+    }
+    .right {
+        @media screen and(max-width: $iphonePlus) {
+            text-align: center;   
+        }
+        #registerBtn{
+            background-color: $primary-color;
+            color: $white-color;
+            @include set-font($title-font, normal);
+            position: relative;
+            top: 33%;
+            left: 10%;
+            @media screen and(max-width: $iphonePlus) {
+                top: -100%;
+                right: 0px;  
+                font-size: 0.5rem;  
+                left: 0px;
+            }
+        }
+    }
+    
+}
