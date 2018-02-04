@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Bakersfield Karting Experience</title>
     
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/home.css">    
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-
-
+    
 </head>
 <body>
 <div class="container-fluid">
@@ -44,79 +42,227 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span id="toggleIcon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Racing
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Racing</a>
-                    <a class="dropdown-item" href="#">Events</a>
-                    <a class="dropdown-item" href="#">Pricing</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Groups & Parties
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Birthday Parties</a>
-                    <a class="dropdown-item" href="#">Corporate Events</a>                
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Racing Classes
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Open Outlaw</a>
-                    <a class="dropdown-item" href="#">Box Stock Outlaw</a>                
-                    <a class="dropdown-item" href="#">Outlaw Mini Dwarf</a>                
-                    <a class="dropdown-item" href="#">Mini Dwarf</a>                
-                    <a class="dropdown-item" href="#">Go-Kart</a>                
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-            </ul>
-        </div>
-    </nav>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span id="toggleIcon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parties.html">Parties</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Racing Classes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Open Outlaw</a>
+                            <a class="dropdown-item" href="#">Box Stock Outlaw</a>
+                            <a class="dropdown-item" href="#">Outlaw Mini Dwarf</a>
+                            <a class="dropdown-item" href="#">Mini Dwarf</a>
+                            <a class="dropdown-item" href="#">Go-Kart</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     <div class="slider">
         <div class="slide_viewer">
-            <div class="slide_group">
-            <div class="slide">
+            <div class="slide_group slideBtn">
+                <div class="slide">
+                </div>
+                <div class="slide">
+                </div>
+                <div class="slide">
+                </div>
+                <div class="slide">
+                </div>
+                </div>
             </div>
-            <div class="slide">
-            </div>
-            <div class="slide">
-            </div>
-            <div class="slide">
-            </div>
-            </div>
-        </div>
         </div><!-- End // .slider -->
-        
         <div class="slide_buttons">
-    </div>
-    <div class="row cta">
+        </div>
+    <div class="row cta cta-white">
         <div class="col-xs-3 col-sm-6 left">
             <h1>Register To Race Here!</h1>
         </div>
         <div class="col-xs-3 col-sm-6 right">
             <input id="registerBtn" type="button" value="Register Here!" class="btn">
         </div>
+    </div>
+    <div class="row highlightCards">
+        <div id="card1" class="col-sm-3 bke-card">
+            <img src="http://bakersfieldke.com/images/home/events.jpg" alt="Upcoming Events">
+            <h2>Upcoming Events</h4>
+            <span>
+             Join us for League Night, Fastest Lap Challenge, & much more! 
+            </span>
+            <input class="btn card1" type="button" value="Learn More">
+        </div>
+        <div id="card2" class="col-sm-3 bke-card">
+            <img src="http://bakersfieldke.com/images/home/events.jpg" alt="Upcoming Events">
+            <h2>Book A Party</h4>
+            <span>
+                Birthday Parties, VIP, and More!
+            </span>
+            <br>
+            <input class="btn card1" type="button" value="Learn More">
+        </div>
+        <div id="card3" class="col-sm-3 bke-card">
+            <img src="http://bakersfieldke.com/images/home/events.jpg" alt="Upcoming Events">
+            <h2>Corporate Events</h4>
+            <span>
+                Team Building, Company Meetings, and Catered Lunches
+            </span>
+            <input class="btn card1" type="button" value="Learn More">
+        </div>
+    </div>
+    <div class="row imgGallery">
+        <div class="row galleryTitle">
+            <div class="col-sm-12">
+                <h1>Gallery</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-sm-3">
+                <img src="http://bakersfieldke.com/images/home/gallery/Gallery1.jpg" alt="Bakersfiled Sign">            
+             </div>
+            <div class="col-sm-3">
+                    <img src="http://bakersfieldke.com/images/home/gallery/Gallery2.jpg" alt="Center Kids Track">
+            </div>
+            <div class="col-sm-3">
+                <img src="http://bakersfieldke.com/images/home/gallery/Gallery1.jpg" alt="Bakersfiled Sign">            
+            </div>
+            <div class="col-sm-3">
+                <img src="http://bakersfieldke.com/images/home/gallery/Gallery2.jpg" alt="Center Kids Track">
+            </div>
+        </div>
+        <div style="height:10px;"></div>
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="http://bakersfieldke.com/images/home/gallery/Gallery1.jpg" alt="Bakersfiled Sign">            
+            </div>
+            <div class="col-sm-3">
+                    <img src="http://bakersfieldke.com/images/home/gallery/Gallery2.jpg" alt="Center Kids Track">
+            </div>
+            <div class="col-sm-3">
+                <img src="http://bakersfieldke.com/images/home/gallery/Gallery1.jpg" alt="Bakersfiled Sign">            
+            </div>
+            <div class="col-sm-3">
+                <img src="http://bakersfieldke.com/images/home/gallery/Gallery2.jpg" alt="Center Kids Track">
+            </div>
+        </div>
+       
+    </div>
+    <div id="popImg" class="displayImg">
+        <span class="close">&times;</span>
+        <img class="popImg-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <div class="testimonial">
+        <div class="slide_viewer">
+            <div class="slide_group">
+            <div class="slide">
+                <h1>Testimonial One</h1>
+            </div>
+            <div class="slide">
+                <h1>Testimonial Two</h1>
+            </div>
+            <div class="slide">
+                <h1>Testimonial Three</h1>
+            </div>
+            <div class="slide">
+                <h1>Testimonial Four</h1>
+            </div>
+            </div>
+        </div>
+        </div><!-- End // .slider -->
+    </div>
+    <div class="row partners">
+        <div class="row titlePartners">
+            <div class="col-sm-12">
+                <h1>Our Partners</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row imgPartners" style="width: 100%;">
+                <div class="col-sm-2">
+                        <img src="http://bakersfieldke.com/images/Sponsors/mmiservices.png" alt="MMI Services Inc.">
+                </div>
+                <div class="col-sm-2">
+                    <img src="http://bakersfieldke.com/images/Sponsors/mmiservices.png" alt="MMI Services Inc.">
+                </div>
+                <div class="col-sm-2">
+                        <img src="http://bakersfieldke.com/images/Sponsors/mmiservices.png" alt="MMI Services Inc.">
+                </div>
+                <div class="col-sm-2">
+                        <img src="http://bakersfieldke.com/images/Sponsors/mmiservices.png" alt="MMI Services Inc.">
+                </div>
+                <div class="col-sm-2">
+                    <img src="http://bakersfieldke.com/images/Sponsors/mmiservices.png" alt="MMI Services Inc.">
+                </div>
+                <div class="col-sm-2">
+                        <img src="http://bakersfieldke.com/images/Sponsors/mmiservices.png" alt="MMI Services Inc.">
+                </div>
+        </div>
+    </div>
+    <div class="row cta cta-red">
+        <div class="col-xs-3 col-sm-6 left">
+            <h1>Register To Race Here!</h1>
+        </div>
+        <div class="col-xs-3 col-sm-6 right">
+            <input id="registerBtn" type="button" value="Register Here!" class="btn">
+        </div>
+    </div>
+<div class="row footer">
+    <div class="col-sm-4">
+        <img src="http://bakersfieldke.com/images/logo/logosm.png" alt="Bakersfield Karting Experience">
+        <p>We Are California's #1 Indoor Kart Racing Facility.</p>
+        <p><strong>Location</strong></p>
+        <p>3101 Gilmore Ave.</p>
+        <p>Bakersfield, CA 93308</p>
+        <p><strong>Phone:</strong> (661) 440-5010</p>
+        <p><strong>Email: </strong> info@BakersfieldKE.com</p>
+    </div>
+    <div class="col-sm-4 sitemap">
+        <h5>SITEMAP</h5>
+        <p>Home</p>
+        <p>About</p>
+        <p>Racing</p>
+        <p>RC & Games</p>
+        <p>Hours & Pricing</p>
+        <p>Contact</p>
+    </div>
+    <div class="col-sm-4">
+        <h5>FOLLOW US!</h5>
+        <i id="footerFacebook"></i>
+        <i id="footerInstagram"></i>
+        <i id="footerTwitter"></i>
+        <i id="footerSnapchat"></i>
+    </div>
+</div>
+<div class="row copyright">
+    <div class="col-sm-12">
+        <p>Copyrights © 2018 All Rights Reserved By Bakersfield Karting Experience | Built & Managed By <strong>JustWeb</strong></p>
     </div>
 </div>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,124 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "slider";
+@import "CTA";
+@import "gallery";
+
+.highlightCards {
+    height: auto;
+    width: 100%;
+    background-color: $secondary-color;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+
+    .bke-card {
+        //border: 1px solid $white-color;
+        height: 80%;
+        width: 100%; 
+        margin: 0 auto;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        text-align: center;
+        img {
+            @include responsive-image();
+            border-radius: 5px;
+        }
+        h2{
+            color: $white-color;
+            text-align: center;
+            margin-top: 15px;
+            @media screen and (max-width: $ipad) {
+                font-size: 15px;
+            }
+        }
+        span{
+            color: $white-color;
+            text-align: center;
+            display: inline-block;
+            @media screen and (max-width: $ipad) {
+                font-size: 10px;
+            }
+        }
+
+        .card1 {            
+            @include bke-red-btn();
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            @media screen and (max-width: $ipad) {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.imgGallery {
+    height: auto;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    .galleryTitle{
+        width: 100%;
+        h1{
+            color: $secondary-color;
+            text-align: center;
+            @media screen and (max-width: $ipad) {
+                font-size: 25px;
+            }
+        }
+        hr{
+            border-width: 2px;
+            width: 10%;
+            margin-top: 0px;
+            margin-bottom: 6%;
+        }
+    }
+
+    img {
+        @include responsive-image();
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        padding-bottom: 5px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+
+.partners{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    .titlePartners{
+        width: 100%;
+        h1{
+            color: $secondary-color;
+            text-align: center;
+            @media screen and (max-width: $ipad) {
+                font-size: 25px;
+            }
+        }
+        hr{
+            border-width: 2px;
+            width: 10%;
+            margin-top: 0px;
+            margin-bottom: 6%;
+        }
+    }    
+    .imgPartners{
+        img{
+            width: 70%;
+        }
+        .col-sm-2{
+            text-align: center;
+        }    
+    }
+}
+

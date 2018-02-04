@@ -1,7 +1,5 @@
 @import "settings";
 @import "custom-mixin";
-@import "slider";
-@import "CTA";
 @import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 @import "../node_modules/font-awesome/scss/font-awesome";
@@ -13,7 +11,7 @@ h4,
 h5,
 h6{font-family: $title-font !important}
 
-li{font-family: $body-font !important}
+li, span{font-family: $body-font !important}
 
 i{ font-style: normal !important;}
 
@@ -159,7 +157,12 @@ i{ font-style: normal !important;}
 
 .navbar {
     background-color: $secondary-color !important;
-    li{@include set-font($body-font, 700);}
+    li{
+        @include set-font($body-font, 700);
+        &:hover{
+            cursor: pointer;
+        }
+    }
     a{
         color: $white-color !important;
         @media screen and (max-width: 991px) {
@@ -187,3 +190,108 @@ i{ font-style: normal !important;}
         @include set-icon($fa-var-navicon, $white-color, 1.7rem);
     }
 } 
+
+
+.footer{
+    background-color: $secondary-color;
+    width: 100%;
+    height: auto;
+    padding: 5% 15% 4% 15%;
+    img{
+        width: 30%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+    p{
+        color: $white-color;
+        font-size: 20px;
+        margin-bottom: 0px;
+        @media screen and (max-width: $ipad) {
+            font-size: 10px;
+        }
+    }
+    h5{
+        color: $white-color;
+        @media screen and (max-width: $ipad) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: $iphonePlus) {
+            padding-top: 3%;
+          } 
+    }
+    .sitemap{
+        @media screen and (max-width: $iphonePlus) {
+          display: none;
+        } 
+    }
+    i{
+        padding-right: 2%;
+    }
+    #footerFacebook{
+        &:before{
+            @include set-icon($fa-var-facebook, $white-color, 2rem);  
+            @media screen and (max-width: $ipad) {
+                font-size: 1.5rem;
+            }       
+        }
+        &:hover{
+            cursor: pointer;
+        }        
+    }
+    #footerInstagram{
+        &:before{
+            @include set-icon($fa-var-instagram, $white-color, 2rem);  
+            @media screen and (max-width: $ipad) {
+                font-size: 1.5rem;
+            }          
+        }
+        &:hover{
+            cursor: pointer;
+        }        
+    }
+    #footerTwitter{
+        &:before{
+            @include set-icon($fa-var-twitter, $white-color, 2rem);
+            @media screen and (max-width: $ipad) {
+                font-size: 1.5rem;
+            }            
+        }
+        &:hover{
+            cursor: pointer;
+        }        
+    }
+    #footerSnapchat{
+        &:before{
+            @include set-icon($fa-var-snapchat, $white-color, 2rem);
+            @media screen and (max-width: $ipad) {
+                font-size: 1.5rem;
+            } 
+                     
+        }
+        &:hover{
+            cursor: pointer;
+        }        
+    }
+}
+
+.copyright{
+    background-color: $secondary-color - 10; 
+    width: 100%;
+    height: auto;
+    padding: 1% 0 1% 0 ;
+    text-align: center;
+    @media screen and (max-width: $iphonePlus) {
+        padding: 1% 5% 1% 5% ;
+      } 
+    p{
+        color: $secondary-color + 10;
+        text-align: center;
+        margin-bottom: 0px;
+        @media screen and (max-width: $ipad) {
+            font-size: 12px;
+        } 
+        @media screen and (max-width: $iphonePlus) {
+            font-size: 10px;
+          } 
+    }
+}

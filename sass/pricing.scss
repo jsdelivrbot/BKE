@@ -1,0 +1,161 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "gallery";
+@import "CTA";
+
+.bannerImg{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    .col-sm-12{
+        text-align: center !important;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.sectionCards {
+    width: 100%;
+    height: auto;
+    padding: 0% 10% 1% 10%;    
+    .col-sm-2{
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            border-color: $primary-color;
+            color: $primary-color !important;
+            i{
+                &:before{
+                    color: $primary-color !important;
+                }                
+            }
+        }
+    }
+    .active{
+        border: transparent !important;
+        background-color: $primary-color !important;
+        color: $white-color;
+        border-radius: 5px;
+        text-align: center;
+        i{
+            &:before{
+                color: $white-color !important;
+            }                
+        }
+        &:hover{
+            cursor: default !important;
+            color: $white-color - 70 !important;
+            i{
+                &:before{
+                    color: $white-color - 70 !important;
+                }                
+            }
+        }        
+    }
+    #jrIcon{
+        &:before{
+            @include set-icon($fa-var-flag, $secondary-color, 2rem)
+        }        
+    }
+    #adultIcon{
+        &:before{
+            @include set-icon($fa-var-flag-checkered, $secondary-color, 2rem)
+        }        
+    }
+    #golfIcon{
+        &:before{
+            @include set-icon($fa-var-bullseye, $secondary-color, 2rem)
+        }
+    }
+    #crazyIcon{
+        &:before{
+            @include set-icon($fa-var-road, $secondary-color, 2rem)
+        }
+    }
+    #specialIcon{
+        &:before{
+            @include set-icon($fa-var-trophy, $secondary-color, 2rem)
+        }
+    }
+    #annualIcon{
+        &:before{
+            @include set-icon($fa-var-calendar, $secondary-color, 2rem)
+        }
+    }
+    hr{
+        width: 100%;
+        border-width: 1px;
+    }
+}
+
+.pricingBlock {
+    width: 100%; 
+    height: auto;
+    padding: 0% 15% 1% 15%; 
+    margin-bottom: 10%;   
+    .main{
+        width: 100%;
+        height: auto;
+        border: 1px solid $light-grey-color - 50;
+        border-radius: 5px;
+    }
+    .short {
+        border-width: 3px;
+        width:20%;
+        float: left;
+    }
+    .pricing {
+        padding-top: 3%;
+    }
+    #jrIcon{
+        &:before{
+            @include set-icon($fa-var-flag, $secondary-color, 10rem);
+        }        
+    }
+    #adultIcon{
+        &:before{
+            @include set-icon($fa-var-flag-checkered, $secondary-color, 10rem)
+        }        
+    }
+    #golfIcon{
+        &:before{
+            @include set-icon($fa-var-bullseye, $secondary-color, 10rem)
+        }
+    }
+    #crazyIcon{
+        &:before{
+            @include set-icon($fa-var-road, $secondary-color, 10rem)
+        }
+    }
+    #specialIcon{
+        &:before{
+            @include set-icon($fa-var-trophy, $secondary-color, 10rem)
+        }
+    }
+    #annualIcon{
+        &:before{
+            @include set-icon($fa-var-calendar, $secondary-color, 10rem)
+        }
+    }
+    .FAQ{
+        padding: 0% 5% 3% 5%;    
+        .btn-link {
+            color: $secondary-color !important;
+        }
+    }
+}

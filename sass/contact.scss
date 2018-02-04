@@ -1,0 +1,191 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "gallery";
+@import "CTA";
+
+.bannerImg{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+
+.bkeInfo{
+    padding: 5% 15%;
+    text-align: center;
+    h5{
+        color: $primary-color;
+    }
+    .sideBar {
+        border-right: 2px solid $secondary-color;
+    }
+    #home{
+        &:before{
+            @include set-icon($fa-var-home, $secondary-color, 4rem);
+        }
+    }
+    #time{
+        &:before{
+            @include set-icon($fa-var-clock-o, $secondary-color, 4rem);
+        }
+    }
+    #message{
+        &:before{
+            @include set-icon($fa-var-comment, $secondary-color, 4rem);
+        }
+    }
+}
+
+.contactBody {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    font-size: 150%;
+    a {
+        color: #404d5b;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    h2 {
+        margin: 0 0 2em;
+        opacity: 0.1;
+    }
+    
+    p {
+        margin: 1em 0;
+        padding: 5em 0 0 0;
+        font-size: 0.65em;
+    }
+    
+    .input {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        border-radius: 5px;
+        height: 100%;
+    }
+    
+    .input__field {
+        position: relative;
+        display: block;
+        float: right;
+        padding: 0.8em;
+        width: 30%;
+        border: none;
+        border-radius: 0;
+        background: $primary-color;
+        color: #aaa;
+        font-weight: 400;
+        font-family: 'Roboto', Arial, sans-serif;
+        -webkit-appearance: none; /* for box shadows to show on iOS */
+    }
+    
+    .input__field:focus {
+        outline: none;
+    }
+    
+    .input__label {
+        display: inline-block;
+        float: right;
+        padding: 0 1em;
+        width: 40%;
+        color: $white-color;
+        font-weight: bold;
+        font-size: 70.25%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .input__label-content {
+        position: relative;
+        display: block;
+        padding: 1.6em 0;
+        width: 100%;
+    }
+    
+    .input--hfd {
+        overflow: hidden;
+    }
+    
+    .input__field--hfd {
+        position: absolute;
+        z-index: 100;
+        padding: 1em 0.4em 0;
+        width: 100%;
+        background: transparent;
+        color: $white-color;
+        font-size: 0.75em;
+    }
+    
+    .input__label--hfd {
+        padding: 0;
+        width: 100%;
+        height: 50px;
+        background: $light-grey-color - 50;
+        text-align: left;
+    }
+
+    .msgBox {
+        height: 100px;
+    }
+    .msg {
+        height: 100% !important;
+    }
+    
+    .input__label-content--hfd {
+        padding: 0.75em 0.75em;
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+        transition: transform 0.3s, color 0.3s;
+        text-rendering: geometricPrecision;
+    }
+    
+    .input__label--hfd::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0px solid transparent;
+        -webkit-transition: border-width 0.3s, border-color 0.3s;
+        transition: border-width 0.3s, border-color 0.3s;
+    }
+    
+    .input__field--hfd:focus + .input__label--hfd::before,
+    .input--filled .input__label--hfd::before {
+        border-color: $primary-color;
+        border-left-width: 0.2em;
+        height: 87%;
+    }
+    
+    .input__field--hfd:focus + .input__label--hfd .input__label-content--hfd,
+    .input--filled .input__label--hfd .input__label-content--hfd {
+        color: $white-color;
+        -webkit-transform: translate3d(0, -1.5em, 0) scale3d(0.75, 0.75, 1);
+        transform: translate3d(0, -1.5em, 0) scale3d(0.75, 0.75, 1) translateZ(1px);
+      padding-top: 1.5em;
+      font-size: 70%;
+    }
+
+    .gMap{
+        width:100%;
+        height: auto;
+        .googlemap{     
+            margin: 0 auto;       
+            width: 90%;
+            height: 100%;
+            background-color: aqua;
+        }
+    }
+}

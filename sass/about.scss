@@ -1,0 +1,59 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "gallery";
+@import "CTA";
+
+
+.bannerImg{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+
+.bkeHighlight{
+    padding: 5% 15%;
+    text-align: center;
+    h5{
+        color: $primary-color;
+    }
+    #track{
+        &:before{
+            @include set-icon($fa-var-road, $secondary-color, 4rem);
+        }
+    }
+    #map{
+        &:before{
+            @include set-icon($fa-var-signal, $secondary-color, 4rem);
+        }
+    }
+    #catwalk{
+        &:before{
+            @include set-icon($fa-var-map, $secondary-color, 4rem);
+        }
+    }
+    #golf{
+        &:before{
+            @include set-icon($fa-var-bullseye, $secondary-color, 4rem);
+        }
+    }
+}
+
+.about {
+    padding: 5% 15%;
+    img{
+        width: 100%;
+        float: right;
+        border-radius: 10px;
+    }
+    hr{
+        border-width: 3px;
+        width: 20%;
+        float: left;
+    }
+}
+
+
+.imgGallery{
+    background-color: $light-grey-color;
+}

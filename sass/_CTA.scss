@@ -5,9 +5,13 @@
     background-color: $light-grey-color;
     h1{
         line-height: 6rem;
-        float: right;
-        @media screen and(max-width: $ipad) {
+        float: right;        
+        @media screen and(max-width: 1161px) {
             font-size: 1.5rem;
+            text-align: center;      
+        }
+        @media screen and(max-width: 714px) {
+            font-size: 1rem;
             text-align: center;      
         }
         @media screen and(max-width: $iphonePlus) {
@@ -22,12 +26,9 @@
             text-align: center;   
         }
         #registerBtn{
-            background-color: $primary-color;
-            color: $white-color;
-            @include set-font($title-font, normal);
+            left: 10%;
             position: relative;
             top: 33%;
-            left: 10%;
             @media screen and(max-width: $iphonePlus) {
                 top: -100%;
                 right: 0px;  
@@ -37,4 +38,20 @@
         }
     }
     
+}
+
+.cta-white{
+    input{
+        @include bke-red-btn();
+    }
+}
+
+.cta-red{
+    background-color: $primary-color;
+    h1{
+        color: $white-color;
+    }
+    input {
+        @include bke-white-btn();
+    }
 }
