@@ -3,8 +3,11 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const PORT = process.env.PORT || 5000;
 
 const app = express();
+
+app.set('port', (PORT));
 
 //View Engine Setup
 app.engine('handlebars', exphbs());
@@ -101,4 +104,4 @@ app.post('/send', (req,res) => {
     });
 });
 
-app.listen(3001, () => console.log('Server started...'));
+app.listen(PORT, () => console.log('Server started on PORT' + PORT));
