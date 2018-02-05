@@ -2,7 +2,7 @@
   "name": "bakersfieldkartingexperience",
   "version": "1.0.0",
   "description": "BKEWeb",
-  "main": "js/sender.js",
+  "main": "sender.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "bootstrap": "^4.0.0",

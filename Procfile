@@ -1,1 +1,1 @@
-web: node js/sender.js
+web: node sender.js
