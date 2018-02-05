@@ -1,0 +1,54 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "gallery";
+@import "CTA";
+
+.bannerImg{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+
+.eventBlock{
+    width: 100%;
+    height: auto;
+    padding: 5% 10%;
+    img{
+        @include responsive-image();
+        float:right;
+    }
+    .descblock1{
+        .col-sm-6{
+            position: relative;
+
+            p{
+                font-weight: bold;
+            }
+
+            a{
+                position: absolute;
+                bottom: 0px;
+                @include bke-red-btn();
+            }
+        }
+    }
+
+
+    #time{
+        &:before{
+            @include set-icon($fa-var-clock-o, $secondary-color, 1.5rem)
+        }
+    }
+    #date{
+        &:before{
+            @include set-icon($fa-var-calendar, $secondary-color, 1.5rem)
+        }
+    }
+    #location{
+        &:before{
+            @include set-icon($fa-var-map-pin, $secondary-color, 1.5rem)
+        }
+    }
+
+}

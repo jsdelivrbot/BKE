@@ -39,8 +39,11 @@
 .contactBody {
     width: 100%;
     height: auto;
-    padding: 10%;
+    padding: 5% 10%;
     font-size: 150%;
+    #success{
+        color:$secondary-color;
+    }
     a {
         color: #404d5b;
         text-decoration: none;
@@ -130,7 +133,7 @@
         padding: 0;
         width: 100%;
         height: 50px;
-        background: $light-grey-color - 50;
+        background: $light-grey-color - 30;
         text-align: left;
     }
 
@@ -185,7 +188,11 @@
             margin: 0 auto;       
             width: 90%;
             height: 100%;
-            background-color: aqua;
         }
+    }
+
+    #contactBtn{
+        margin-top: 2%;
+        @include bke-red-btn();
     }
 }

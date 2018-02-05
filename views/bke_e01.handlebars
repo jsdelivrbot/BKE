@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event 01 | Bakersfield Karting Experience</title>
+
+    <link rel="stylesheet" href="public/css/eventtemp.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1874501872785631&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container-fluid">
+        <div class="row topBanner">
+            <div id="bannerLeft" class="col-xs-12 col-sm-6">
+                <div id="sectionsLeft" class="row">
+                    <div class="col-xs-6">
+                        <i id="phone"></i>
+                        <span>(661) 440-5010</span>
+                    </div>
+                    <div class="col-xs-6">
+                        <i id="mapMarker"></i>
+                        <span>Map & Directions</span>
+                    </div>
+                </div>
+            </div>
+            <div id="bannerRight" class="col-xs-12 col-sm-6">
+                <div id="sectionsRight">
+                    <div id="left" class="col-xs-6">
+                        <i id="flag"></i>
+                        <span>We Are Open Tonight Until 10pm!</span>
+                    </div>
+                    <div id="right" class="col-xs-6">
+                        <span>Follow Us!</span>
+                        <i id="facebook"></i>
+                        <i id="instagram"></i>
+                        <i id="twitter"></i>
+                        <i id="snapchat"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span id="toggleIcon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parties">Parties</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Racing Classes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Open Outlaw</a>
+                            <a class="dropdown-item" href="#">Box Stock Outlaw</a>
+                            <a class="dropdown-item" href="#">Outlaw Mini Dwarf</a>
+                            <a class="dropdown-item" href="#">Mini Dwarf</a>
+                            <a class="dropdown-item" href="#">Go-Kart</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row bannerImg">
+    </div>
+    <div class="row eventBlock">
+        <div class="col-sm-6">
+            <h3 id="title">Title Of Event Number One</h3>
+            <p id="description">This is a section specifically dedicated to the description of the event. Right here is where you would really want to have 
+                something really awesome that would make someone want to go to the event!</p>
+            <div class="row descblock1">
+                <div class="col-sm-6">
+                    <i id="date"></i> 
+                    <p>10/28/2018</p>
+                    </div>
+                <div class="col-sm-6">
+                    <i id="time"></i>
+                    <p>7:00pm</p>
+                </div>
+            </div>
+            <div class="row descblock1">
+                <div class="col-sm-6">
+                    <i id="location"></i> 
+                    <p>3101 Gilmore Ave, Bakersfield, CA 93308</p>
+                    </div>
+                <div class="col-sm-6">
+                    <a href="contact" class="btn">Contact Us!</a>                    
+                </div>
+            </div>     
+        </div>
+        <div class="col-sm-6">
+            <img src="http://via.placeholder.com/600x300" alt="">
+        </div>
+    </div>
+    <div class="row cta cta-red">
+        <div class="col-xs-3 col-sm-6 left">
+            <h1>Register To Race Here!</h1>
+        </div>
+        <div class="col-xs-3 col-sm-6 right">
+            <input id="registerBtn" type="button" value="Register Here!" class="btn">
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-sm-4">
+            <img src="http://bakersfieldke.com/images/logo/logosm.png" alt="Bakersfield Karting Experience">
+            <p>We Are California's #1 Indoor Kart Racing Facility.</p>
+            <p>
+                <strong>Location</strong>
+            </p>
+            <p>3101 Gilmore Ave.</p>
+            <p>Bakersfield, CA 93308</p>
+            <p>
+                <strong>Phone:</strong> (661) 440-5010</p>
+            <p>
+                <strong>Email: </strong> info@BakersfieldKE.com</p>
+        </div>
+        <div class="col-sm-4 sitemap">
+            <h5>SITEMAP</h5>
+            <p>Home</p>
+            <p>About</p>
+            <p>Racing</p>
+            <p>RC & Games</p>
+            <p>Hours & Pricing</p>
+            <p>Contact</p>
+        </div>
+        <div class="col-sm-4">
+            <h5>FOLLOW US!</h5>
+            <i id="footerFacebook"></i>
+            <i id="footerInstagram"></i>
+            <i id="footerTwitter"></i>
+            <i id="footerSnapchat"></i>
+            <div class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-small-header="false" 
+            data-adapt-container-width="true" data-height="100" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BakersfieldKE/" 
+            class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a></blockquote></div>
+        </div>
+    </div>
+    <div class="row copyright">
+        <div class="col-sm-12">
+            <p>Copyrights © 2018 All Rights Reserved By Bakersfield Karting Experience | Built & Managed By
+                <strong>JustWeb</strong>
+            </p>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

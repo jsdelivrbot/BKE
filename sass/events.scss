@@ -1,0 +1,121 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "gallery";
+@import "CTA";
+
+.bannerImg{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    .col-sm-12{
+        text-align: center !important;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.sectionCards {
+    width: 100%;
+    height: auto;
+    padding: 0% 10% 1% 10%;    
+    .col-sm-2{
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            border-color: $primary-color;
+            color: $primary-color !important;
+            i{
+                &:before{
+                    color: $primary-color !important;
+                }                
+            }
+        }
+    }
+    .active{
+        border: transparent !important;
+        background-color: $primary-color !important;
+        color: $white-color;
+        border-radius: 5px;
+        text-align: center;
+        i{
+            &:before{
+                color: $white-color !important;
+            }                
+        }
+        &:hover{
+            cursor: default !important;
+            color: $white-color - 70 !important;
+            i{
+                &:before{
+                    color: $white-color - 70 !important;
+                }                
+            }
+        }        
+    }
+    #jrIcon{
+        &:before{
+            @include set-icon($fa-var-flag, $secondary-color, 2rem)
+        }        
+    }
+    #adultIcon{
+        &:before{
+            @include set-icon($fa-var-flag-checkered, $secondary-color, 2rem)
+        }        
+    }
+    #golfIcon{
+        &:before{
+            @include set-icon($fa-var-bullseye, $secondary-color, 2rem)
+        }
+    }
+    #crazyIcon{
+        &:before{
+            @include set-icon($fa-var-road, $secondary-color, 2rem)
+        }
+    }
+    #specialIcon{
+        &:before{
+            @include set-icon($fa-var-trophy, $secondary-color, 2rem)
+        }
+    }
+    #annualIcon{
+        &:before{
+            @include set-icon($fa-var-calendar, $secondary-color, 2rem)
+        }
+    }
+    hr{
+        width: 100%;
+        border-width: 1px;
+    }
+}
+
+.eventRoll{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    img{
+        float: right;
+    }
+    .row{
+        margin-top: 3%;
+    }
+
+    a{
+        @include bke-red-btn();
+    }
+}
+

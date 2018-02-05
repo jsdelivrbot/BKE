@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact | Bakersfield Karting Experience</title>
+    <title>Event 02 | Bakersfield Karting Experience</title>
 
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/eventtemp.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+     <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1874501872785631&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="container-fluid">
         <div class="row topBanner">
             <div id="bannerLeft" class="col-xs-12 col-sm-6">
@@ -51,21 +59,21 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home
+                        <a class="nav-link" href="home">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
+                        <a class="nav-link" href="pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="events">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="parties.html">Parties</a>
+                        <a class="nav-link" href="parties">Parties</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -80,86 +88,41 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="row bannerImg">
-
     </div>
-    <div class="row bkeInfo">
-        <div class="col-sm-4 sideBar">
-            <i id="home"></i>
-            <h5>LOCATION</h5>
-            <p>3101 Gilmore Avenue, Bakersfield, CA 93308</p>
-        </div>
-        <div class="col-sm-4 sideBar">
-            <i id="time"></i>
-            <h5>HOURS</h5>
-            <p>Sunday - Thursday 12am to 10pm</p>
-            <p>Friday - Saturday 12pm to 12am</p>
-        </div>
-        <div class="col-sm-4">
-            <i id="message"></i>
-            <h5>CONTACT</h5>
-            <p>Call Us At (661) 440-5010</p>
-        </div>
-    </div>
-    <div class="row contactBody">
-        <div class="col-sm-6 form">
-            <div class="row contactTitle">
-                <div class="col-sm-12">
-                    <h3>Contact Us!</h3>
-                </div>                
-            </div>
-            <div class="row">                
+    <div class="row eventBlock">
+        <div class="col-sm-6">
+            <h3 id="title">Title Of Event Number One</h3>
+            <p id="description">This is a section specifically dedicated to the description of the event. Right here is where you would really want to have 
+                something really awesome that would make someone want to go to the event!</p>
+            <div class="row descblock1">
                 <div class="col-sm-6">
-                    <span class="input input--hfd">
-                        <input class="input__field input__field--hfd" type="text" id="input-28" />
-                        <label class="input__label input__label--hfd" for="input-28">
-                            <span class="input__label-content input__label-content--hfd">First Name</span>
-                        </label>
-                    </span>
-                </div>
+                    <i id="date"></i> 
+                    <p>10/28/2018</p>
+                    </div>
                 <div class="col-sm-6">
-                    <span class="input input--hfd">
-                        <input class="input__field input__field--hfd" type="text" id="input-28" />
-                        <label class="input__label input__label--hfd" for="input-28">
-                            <span class="input__label-content input__label-content--hfd">Last Name</span>
-                        </label>
-                    </span>
+                    <i id="time"></i>
+                    <p>7:00pm</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <span class="input input--hfd">
-                        <input class="input__field input__field--hfd" type="text" id="input-28" />
-                        <label class="input__label input__label--hfd" for="input-28">
-                            <span class="input__label-content input__label-content--hfd">Email</span>
-                        </label>
-                    </span>
+            <div class="row descblock1">
+                <div class="col-sm-6">
+                    <i id="location"></i> 
+                    <p>3101 Gilmore Ave, Bakersfield, CA 93308</p>
+                    </div>
+                <div class="col-sm-6">
+                    <a href="contact" class="btn">Contact Us!</a>      
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 msgBox">
-                    <span class="input input--hfd">
-                        <input class="input__field input__field--hfd" type="text" id="input-28" />
-                        <label class="input__label input__label--hfd msg" for="input-28">
-                            <span class="input__label-content input__label-content--hfd">Message</span>
-                        </label>
-                    </span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12"></div>
-            </div>
+            </div>     
         </div>
-        <div class="col-sm-6 gMap">
-            <div class="googlemap">
-
-            </div>
+        <div class="col-sm-6">
+            <img src="http://via.placeholder.com/600x300" alt="">
         </div>
     </div>
     <div class="row cta cta-red">
@@ -199,6 +162,9 @@
             <i id="footerInstagram"></i>
             <i id="footerTwitter"></i>
             <i id="footerSnapchat"></i>
+            <div class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-small-header="false" 
+            data-adapt-container-width="true" data-height="100" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BakersfieldKE/" 
+            class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a></blockquote></div>
         </div>
     </div>
     <div class="row copyright">
@@ -211,42 +177,6 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/app.js"></script>
-    <script src="./js/contact.js"></script>
-    <script>
-        (function () {
-            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
-            if (!String.prototype.trim) {
-                (function () {
-                    // Make sure we trim BOM and NBSP
-                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
-                    String.prototype.trim = function () {
-                        return this.replace(rtrim, '');
-                    };
-                })();
-            }
-
-            [].slice.call(document.querySelectorAll('input.input__field')).forEach(function (inputEl) {
-                // in case the input is already filled..
-                if (inputEl.value.trim() !== '') {
-                    classie.add(inputEl.parentNode, 'input--filled');
-                }
-
-                // events:
-                inputEl.addEventListener('focus', onInputFocus);
-                inputEl.addEventListener('blur', onInputBlur);
-            });
-
-            function onInputFocus(ev) {
-                classie.add(ev.target.parentNode, 'input--filled');
-            }
-
-            function onInputBlur(ev) {
-                if (ev.target.value.trim() === '') {
-                    classie.remove(ev.target.parentNode, 'input--filled');
-                }
-            }
-        })();
-    </script>
 </body>
 
 </html>
