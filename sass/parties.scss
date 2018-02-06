@@ -1,0 +1,203 @@
+@import "style";
+@import "settings";
+@import "custom-mixin";
+@import "gallery";
+@import "CTA";
+
+.bannerImg{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    .col-sm-12{
+        text-align: center !important;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.sectionCards {
+    width: 100%;
+    height: auto;
+    padding: 0% 10% 1% 10%;    
+    .col-sm-6{
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            border-color: $primary-color;
+            color: $primary-color !important;
+            i{
+                &:before{
+                    color: $primary-color !important;
+                }                
+            }
+        }
+    }
+    .active{
+        border: transparent !important;
+        background-color: $primary-color !important;
+        color: $white-color;
+        border-radius: 5px;
+        text-align: center;
+        i{
+            &:before{
+                color: $white-color !important;
+            }                
+        }
+        &:hover{
+            cursor: default !important;
+            color: $white-color - 70 !important;
+            i{
+                &:before{
+                    color: $white-color - 70 !important;
+                }                
+            }
+        }        
+    }
+    #jrIcon{
+        &:before{
+            @include set-icon($fa-var-flag, $secondary-color, 2rem)
+        }        
+    }
+    #adultIcon{
+        &:before{
+            @include set-icon($fa-var-flag-checkered, $secondary-color, 2rem)
+        }        
+    }
+    hr{
+        width: 100%;
+        border-width: 1px;
+    }
+}
+
+.pricingBlock {
+    width: 100%; 
+    height: auto;
+    padding: 0% 15% 1% 15%; 
+    margin-bottom: 10%;   
+    .main{
+        width: 100%;
+        height: auto;
+        border: 1px solid $light-grey-color - 50;
+        border-radius: 5px;
+        padding-bottom: 5%;
+    }
+    h2{
+        text-align: center;
+    }
+    .short {
+        border-width: 3px;
+        width:20%;
+        text-align: center;
+    }
+    .pricing {
+        padding-top: 3%;
+    }
+
+    .classIcon{
+        text-align: center;
+    }
+    #jrIcon{
+        &:before{
+            @include set-icon($fa-var-flag, $secondary-color, 4rem);            
+        }        
+    }
+    #adultIcon{
+        &:before{
+            @include set-icon($fa-var-flag-checkered, $secondary-color, 7rem)
+        }        
+    }
+    .package{
+        width: 100%;
+        height:auto;
+        h6{
+            background-color: $light-grey-color - 10;
+            text-align: center;
+            padding: 5%;
+            border-radius: 5px;
+            margin-bottom: 3%;
+        }
+        input[type=button]{
+            margin-top: 5%;
+            margin-left: 25%;
+            padding: 2% 0%;
+            width: 50%;
+            @include bke-red-btn();
+        }
+        p{
+            font-size: .9rem;
+            margin-bottom: 0px;
+            font-weight: bold;
+            text-align: center;
+            &:nth-of-type(10){
+                margin-bottom: 3%;
+                font-weight: normal;
+            }
+        }
+
+        .last{
+            margin-bottom: 3%;
+            font-weight: normal;
+        }
+        .price{
+            margin-left: 40%;
+            font-size: 2rem;
+            font-weight: bold;
+            .dollarSign{
+                font-size: .7rem;
+                vertical-align: text-top;
+            }
+            .racer{
+                font-size: 1rem;
+                font-weight: normal;
+            }
+        }
+        #headerhr{
+            margin-top:.5rem;
+            border-width: 3px;
+        }
+    }
+    .partyForm{
+        padding: 0% 5% 3% 5%;  
+        width:100%;
+        height: auto; 
+        form{
+            width: 100%;
+        }
+        h5{
+            text-align: center;
+        }
+
+        .goBack{
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            &:before{
+                @include set-icon($fa-var-arrow-left, $secondary-color, 1rem);
+                padding-right: 10px;
+            }
+        }
+        
+    }
+
+    button {
+        @include bke-red-btn();
+        margin-left: 40%;
+        width: 20%;
+        margin-top: 5%;
+        padding: 1% 0%;
+    }
+}

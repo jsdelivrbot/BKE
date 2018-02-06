@@ -56,8 +56,209 @@ app.get('/bke_e03', (req, res) => {
     res.render('bke_e03');
 });
 
+app.get('/parties', (req, res) => {
+    res.render('parties');
+});
+
 app.get('/contact', (req, res) => {
     res.render('contact');
+});
+
+
+app.post('/JrAPackage', (req, res) => {
+    const output = `
+    <p>You have a new party request!</p>
+    <h3>Contact Details</h3>
+    <ul>
+        <li>Party Type: Jr. Kart Party Package A</li>
+        <li>Full Name: ${req.body.FullName}</li>
+        <li>Email: ${req.body.Email}</li>
+        <li>Phone: ${req.body.Phone}</li>  
+        <li>Date & Time: ${req.body.DateTime}</li>  
+        <li>Child's Name: ${req.body.ChildName}</li>        
+        <li>Number of Kids: ${req.body.NumberOfKids}</li>  
+        <li>Pizza Type: ${req.body.Pizza}</li>  
+        <li>Shirt Size: ${req.body.ShirtSize}</li>  
+    </ul>
+    `;
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: 'nickrhollenbeck@gmail.com', // generated ethereal user
+            pass: 'vbfadmin2251'  // generated ethereal password
+        }
+    });
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: '"BKE Website" <nickrhollenbeck@gmail.com>', // sender address
+        to: 'nick@justweb.design', // list of receivers
+        subject: 'Jr. Kart Party Submission | Package A 👍', // Subject line
+        text: 'Hello world?', // plain text body
+        html: output // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+            res.render('parties', {msg: 'There was an error sending the message. Please try again another time.'});
+        }
+        console.log('Message sent: %s', info.messageId);        
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));        
+        res.render('parties', {msg: 'Email has been sent!'});
+    });
+});
+
+app.post('/JrBPackage', (req, res) => {
+    const output = `
+    <p>You have a new party request!</p>
+    <h3>Contact Details</h3>
+    <ul>
+        <li>Party Type: Jr. Kart Party Package B</li>
+        <li>Full Name: ${req.body.FullName}</li>
+        <li>Email: ${req.body.Email}</li>
+        <li>Phone: ${req.body.Phone}</li>  
+        <li>Date & Time: ${req.body.DateTime}</li>  
+        <li>Child's Name: ${req.body.ChildName}</li>        
+        <li>Number of Kids: ${req.body.NumberOfKids}</li>  
+        <li>Pizza Type: ${req.body.Pizza}</li>  
+        <li>Shirt Size: ${req.body.ShirtSize}</li>  
+    </ul>
+    `;
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: 'nickrhollenbeck@gmail.com', // generated ethereal user
+            pass: 'vbfadmin2251'  // generated ethereal password
+        }
+    });
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: '"BKE Website" <nickrhollenbeck@gmail.com>', // sender address
+        to: 'nick@justweb.design', // list of receivers
+        subject: 'Jr. Kart Party Submission | Package B 👍', // Subject line
+        text: 'Hello world?', // plain text body
+        html: output // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+            res.render('parties', {msg: 'There was an error sending the message. Please try again another time.'});
+        }
+        console.log('Message sent: %s', info.messageId);        
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));        
+        res.render('parties', {msg: 'Email has been sent!'});
+    });
+});
+
+app.post('/AdultAPackage', (req, res) => {
+    const output = `
+    <p>You have a new party request!</p>
+    <h3>Contact Details</h3>
+    <ul>
+        <li>Party Type: Adult Kart Party Package A</li>
+        <li>Full Name: ${req.body.FullName}</li>
+        <li>Email: ${req.body.Email}</li>
+        <li>Phone: ${req.body.Phone}</li>  
+        <li>Date & Time: ${req.body.DateTime}</li>  
+        <li>Child's Name: ${req.body.ChildName}</li>        
+        <li>Number of Kids: ${req.body.NumberOfKids}</li>  
+        <li>Pizza Type: ${req.body.Pizza}</li>  
+        <li>Shirt Size: ${req.body.ShirtSize}</li>  
+    </ul>
+    `;
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: 'nickrhollenbeck@gmail.com', // generated ethereal user
+            pass: 'vbfadmin2251'  // generated ethereal password
+        }
+    });
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: '"BKE Website" <nickrhollenbeck@gmail.com>', // sender address
+        to: 'nick@justweb.design', // list of receivers
+        subject: 'Adult Kart Party Submission | Package A 👍', // Subject line
+        text: 'Hello world?', // plain text body
+        html: output // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+            res.render('parties', {msg: 'There was an error sending the message. Please try again another time.'});
+        }
+        console.log('Message sent: %s', info.messageId);        
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));        
+        res.render('parties', {msg: 'Email has been sent!'});
+    });
+});
+
+app.post('/AdultBPackage', (req, res) => {
+    const output = `
+    <p>You have a new party request!</p>
+    <h3>Contact Details</h3>
+    <ul>
+        <li>Party Type: Adult Kart Party Package B</li>
+        <li>Full Name: ${req.body.FullName}</li>
+        <li>Email: ${req.body.Email}</li>
+        <li>Phone: ${req.body.Phone}</li>  
+        <li>Date & Time: ${req.body.DateTime}</li>  
+        <li>Child's Name: ${req.body.ChildName}</li>        
+        <li>Number of Kids: ${req.body.NumberOfKids}</li>  
+        <li>Pizza Type: ${req.body.Pizza}</li>  
+        <li>Shirt Size: ${req.body.ShirtSize}</li>  
+    </ul>
+    `;
+
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: 'nickrhollenbeck@gmail.com', // generated ethereal user
+            pass: 'vbfadmin2251'  // generated ethereal password
+        }
+    });
+
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: '"BKE Website" <nickrhollenbeck@gmail.com>', // sender address
+        to: 'nick@justweb.design', // list of receivers
+        subject: 'Adult Kart Party Submission | Package B 👍', // Subject line
+        text: 'Hello world?', // plain text body
+        html: output // html body
+    };
+
+    // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+            res.render('parties', {msg: 'There was an error sending the message. Please try again another time.'});
+        }
+        console.log('Message sent: %s', info.messageId);        
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));        
+        res.render('parties', {msg: 'Email has been sent!'});
+    });
 });
 
 app.post('/send', (req,res) => {

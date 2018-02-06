@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pricing | Bakersfield Karting Experience</title>
+
+    <link rel="stylesheet" href="public/css/parties.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1874501872785631&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container-fluid">
+        <div class="row topBanner">
+            <div id="bannerLeft" class="col-xs-12 col-sm-6">
+                <div id="sectionsLeft" class="row">
+                    <div class="col-xs-6">
+                        <i id="phone"></i>
+                        <span>(661) 440-5010</span>
+                    </div>
+                    <div class="col-xs-6">
+                        <i id="mapMarker"></i>
+                        <span>Map & Directions</span>
+                    </div>
+                </div>
+            </div>
+            <div id="bannerRight" class="col-xs-12 col-sm-6">
+                <div id="sectionsRight">
+                    <div id="left" class="col-xs-6">
+                        <i id="flag"></i>
+                        <span>We Are Open Tonight Until 10pm!</span>
+                    </div>
+                    <div id="right" class="col-xs-6">
+                        <span>Follow Us!</span>
+                        <i id="facebook"></i>
+                        <i id="instagram"></i>
+                        <i id="twitter"></i>
+                        <i id="snapchat"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span id="toggleIcon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parties">Parties</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Racing Classes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Open Outlaw</a>
+                            <a class="dropdown-item" href="#">Box Stock Outlaw</a>
+                            <a class="dropdown-item" href="#">Outlaw Mini Dwarf</a>
+                            <a class="dropdown-item" href="#">Mini Dwarf</a>
+                            <a class="dropdown-item" href="#">Go-Kart</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row bannerImg">
+    </div>
+    <div class="row title">
+        <div class="col-sm-12">
+            <h2>Bakersfield Karting Experience Pricing Guide</h2>
+            <p>Choose an activity from the tabs below to view the current pricing and any possible requirements or frequently
+                asked questions!</p>
+            <h6>{{msg}}</h6>
+        </div>
+    </div>
+    <div class="row sectionCards">
+        <div class="col-sm-6 active">
+            <i id="jrIcon"></i>
+            <h6>Jr. Kart Parties</h6>
+        </div>
+        <div class="col-sm-6">
+            <i id="adultIcon"></i>
+            <h6>Adult Kart Parties</h6>
+        </div>
+        <hr>
+    </div>
+    <div class="row pricingBlock">
+        <div id="jrIcon-div" class="col-sm-12 main">
+            <div class="row packageBlock">
+                <div class="col-sm-12 pricing">
+                    <p class="classIcon">
+                        <i id="jrIcon"></i>
+                    </p>
+                    <h2>Jr. Kart Parties</h2>
+                    <hr class="short">
+                    <br>
+                    <br>
+                    <div class="row package">
+                        <div class="col-sm-6">
+                            <span>
+                                <h6>Package A</h6>
+                            </span>
+                            <span class="price">
+                                <span class="dollarSign">$</span> 30
+                                <span class="racer">/Racer</span>
+                            </span>
+                            <hr id="headerhr">
+                            <p>10 LAP GO-KART RACE</p>
+                            <hr>
+                            <p>40 ARCADE TOKENS</p>
+                            <hr>
+                            <p>GROUP PHOTO ON THE BKE PODIUM</p>
+                            <hr>
+                            <p>1 HOUR IN PARTY ROOM</p>
+                            <hr>
+                            <p>PERONAL PARTY HOST</p>
+                            <hr>
+                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
+                            <hr>
+                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
+                            <hr>
+                            <p>1/2 OFF COUPON ON R/C RENTALS</p>
+                            <hr>
+                            <p>T-Shirt For Birthday Child</p>
+                            <hr>
+                            <p>*150 Non-Refundable Deposit Required Upon Booking</p>
+                            <input id="jrabtn" type="button" value="Book" class="btn">
+                        </div>
+                        <div class="col-sm-6">
+                            <span>
+                                <h6>Package B</h6>
+                            </span>
+                            <span class="price">
+                                <span class="dollarSign">$</span> 25
+                                <span class="racer">/Racer</span>
+                            </span>
+                            <hr id="headerhr">
+                            <p>10 LAP GO-KART RACE</p>
+                            <hr>
+                            <p>20 ARCADE TOKENS</p>
+                            <hr>
+                            <p>1 HOUR IN PARTY ROOM</p>
+                            <hr>
+                            <p>PERONAL PARTY HOST</p>
+                            <hr>
+                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
+                            <hr>
+                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
+                            <hr>
+                            <p>T-Shirt For Birthday Child</p>
+                            <hr>
+                            <p class="last">*150 Non-Refundable Deposit Required Upon Booking</p>
+                            <input id="jrbbtn" type="button" value="Book" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row partyForm hide">
+                <div class="col-sm-12">
+                    <hr>
+                    <span class="goBack">Go Back</span>
+                    <h5>It's Time To Party!!!</h3>
+                </div>
+                <form id="jraForm" class="jrabtn hide" action="JrAPackage" method="post">
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="phone">Phone</label>
+                            <input class="form-control" type="tel" value="1-(555)-555-5555" name="Phone" id="example-tel-input">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateTime">Date & Time</label>
+                            <input class="form-control" type="datetime-local" value="2018-08-19T13:45:00" name="DateTime" id="example-datetime-local-input">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="dateTime">Birthday Child's Name</label>
+                            <input class="form-control" type="text" value="Birthday Child's Name" name="ChildName" id="birthdayChild">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="numberofKids">Number Of Kids Attending The Party (Must Be Atleast 8)</label>
+                            <input class="form-control" type="number" min="8" value="8" name="NumberOfKids" id="numberofKids">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="typeofPizza">What Kind Of Pizza?</label>
+                            <select class="form-control" id="typeofPizza" name="Pizza">
+                                <option>Cheese Pizza</option>
+                                <option>Pepperoni Pizza</option>
+                                <option>Combination Pizza</option>
+                                <option>Pineapple & Canadian Bacon</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="sizeofshirt">Size Of Shirt</label>
+                            <select class="form-control" id="sizeofshirt" name="ShirtSize">
+                                <option>X-Small</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>X-Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="jraSubmit" type="submit" class="btn">Book Now!</button>
+                </form>
+                <form id="jrbForm" class="jrbbtn hide" action="JrBPackage" method="post">
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="phone">Phone</label>
+                            <input class="form-control" type="tel" value="1-(555)-555-5555" name="Phone" id="example-tel-input">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateTime">Date & Time</label>
+                            <input class="form-control" type="datetime-local" value="2018-08-19T13:45:00" name="DateTime" id="example-datetime-local-input">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="dateTime">Birthday Child's Name</label>
+                            <input class="form-control" type="text" value="Birthday Child's Name" name="ChildName" id="birthdayChild">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="numberofKids">Number Of Kids Attending The Party (Must Be Atleast 8)</label>
+                            <input class="form-control" type="number" min="8" value="8" name="NumberOfKids" id="numberofKids">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="typeofPizza">What Kind Of Pizza?</label>
+                            <select class="form-control" id="typeofPizza" name="Pizza">
+                                <option>Cheese Pizza</option>
+                                <option>Pepperoni Pizza</option>
+                                <option>Combination Pizza</option>
+                                <option>Pineapple & Canadian Bacon</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="ShirtSize">Size Of Shirt</label>
+                            <select class="form-control" id="ShirtSize" name="ShirtSize">
+                                <option>X-Small</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>X-Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="jrbSubmit" type="submit" class="btn">Book Now!</button>
+                </form>
+            </div>
+        </div>
+        <div id="adultIcon-div" class="col-sm-12 main hide">
+            <div class="row packageBlock">
+                <div class="col-sm-12 pricing">
+                    <p class="classIcon">
+                        <i id="adultIcon"></i>
+                    </p>
+                    <h2>Adult Kart Parties</h2>
+                    <hr class="short">
+                    <br>
+                    <br>
+                    <div class="row package">
+                        <div class="col-sm-6">
+                            <span>
+                                <h6>Package A</h6>
+                            </span>
+                            <span class="price">
+                                <span class="dollarSign">$</span> 35
+                                <span class="racer">/Racer</span>
+                            </span>
+                            <hr id="headerhr">
+                            <p>20 LAP GO-KART RACE</p>
+                            <hr>
+                            <p>40 ARCADE TOKENS</p>
+                            <hr>
+                            <p>GROUP PHOTO ON THE BKE PODIUM</p>
+                            <hr>
+                            <p>1 HOUR IN PARTY ROOM</p>
+                            <hr>
+                            <p>PERONAL PARTY HOST</p>
+                            <hr>
+                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
+                            <hr>
+                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
+                            <hr>
+                            <p>1/2 OFF COUPON ON R/C RENTALS</p>
+                            <hr>
+                            <p>T-Shirt For Birthday Child</p>
+                            <hr>
+                            <p>Medals For Each Racer</p>
+                            <hr>
+                            <p>*150 Non-Refundable Deposit Required Upon Booking</p>
+                            <input id="adultabtn" type="button" value="Book" class="btn">
+                        </div>
+                        <div class="col-sm-6">
+                            <span>
+                                <h6>Package B</h6>
+                            </span>
+                            <span class="price">
+                                <span class="dollarSign">$</span> 28
+                                <span class="racer">/Racer</span>
+                            </span>
+                            <hr id="headerhr">
+                            <p>20 LAP GO-KART RACE</p>
+                            <hr>
+                            <p>20 ARCADE TOKENS</p>
+                            <hr>
+                            <p>1 HOUR IN PARTY ROOM</p>
+                            <hr>
+                            <p>PERONAL PARTY HOST</p>
+                            <hr>
+                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
+                            <hr>
+                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
+                            <hr>
+                            <p>T-Shirt For Birthday Child</p>
+                            <hr>
+                            <p class="last">*150 Non-Refundable Deposit Required Upon Booking</p>
+                            <input id="adultbbtn" type="button" value="Book" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row partyForm hide">
+                <div class="col-sm-12">
+                    <hr>
+                    <span class="goBack">Go Back</span>
+                    <h5>It's Time To Party!!!</h3>
+                </div>
+                <form class="adultabtn hide" action="AdultAPackage" method="post">
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="phone">Phone</label>
+                            <input class="form-control" type="tel" value="1-(555)-555-5555" name="Phone" id="example-tel-input">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateTime">Date & Time</label>
+                            <input class="form-control" type="datetime-local" value="2018-08-19T13:45:00" name="DateTime" id="example-datetime-local-input">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="dateTime">Birthday Child's Name</label>
+                            <input class="form-control" type="text" value="Birthday Child's Name" name="ChildName" id="birthdayChild">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="numberofKids">Number Of Kids Attending The Party (Must Be Atleast 8)</label>
+                            <input class="form-control" type="number" min="8" value="8" name="NumberOfKids" id="numberofKids">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="typeofPizza">What Kind Of Pizza?</label>
+                            <select class="form-control" id="typeofPizza" name="Pizza">
+                                <option>Cheese Pizza</option>
+                                <option>Pepperoni Pizza</option>
+                                <option>Combination Pizza</option>
+                                <option>Pineapple & Canadian Bacon</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="ShirtSize">Size Of Shirt</label>
+                            <select class="form-control" id="ShirtSize" name="ShirtSize">
+                                <option>X-Small</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>X-Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="adultaSubmit" type="submit" class="btn">Book Now!</button>
+                </form>
+                <form class="adultbbtn hide" action="AdultBPackage" method="post">
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <label for="fullname">Full Name Package</label>
+                            <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="phone">Phone</label>
+                            <input class="form-control" type="tel" value="1-(555)-555-5555" name="Phone" id="example-tel-input">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateTime">Date & Time</label>
+                            <input class="form-control" type="datetime-local" value="2018-08-19T13:45:00" name="DateTime" id="example-datetime-local-input">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="dateTime">Birthday Child's Name</label>
+                            <input class="form-control" type="text" value="Birthday Child's Name" name="ChildName" id="birthdayChild">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="numberofKids">Number Of Kids Attending The Party (Must Be Atleast 8)</label>
+                            <input class="form-control" type="number" min="8" value="8" name="NumberOfKids" id="numberofKids">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="typeofPizza">What Kind Of Pizza?</label>
+                            <select class="form-control" id="typeofPizza" name="Pizza">
+                                <option>Cheese Pizza</option>
+                                <option>Pepperoni Pizza</option>
+                                <option>Combination Pizza</option>
+                                <option>Pineapple & Canadian Bacon</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="ShirtSize">Size Of Shirt</label>
+                            <select class="form-control" id="ShirtSize" name="ShirtSize">
+                                <option>X-Small</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                                <option>X-Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="adultbSubmit" type="submit" class="btn">Book Now!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row cta cta-red">
+        <div class="col-xs-3 col-sm-6 left">
+            <h1>Register To Race Here!</h1>
+        </div>
+        <div class="col-xs-3 col-sm-6 right">
+            <input id="registerBtn" type="button" value="Register Here!" class="btn">
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-sm-4">
+            <img src="http://bakersfieldke.com/images/logo/logosm.png" alt="Bakersfield Karting Experience">
+            <p>We Are California's #1 Indoor Kart Racing Facility.</p>
+            <p>
+                <strong>Location</strong>
+            </p>
+            <p>3101 Gilmore Ave.</p>
+            <p>Bakersfield, CA 93308</p>
+            <p>
+                <strong>Phone:</strong> (661) 440-5010</p>
+            <p>
+                <strong>Email: </strong> info@BakersfieldKE.com</p>
+        </div>
+        <div class="col-sm-4 sitemap">
+            <h5>SITEMAP</h5>
+            <p>Home</p>
+            <p>About</p>
+            <p>Racing</p>
+            <p>RC & Games</p>
+            <p>Hours & Pricing</p>
+            <p>Contact</p>
+        </div>
+        <div class="col-sm-4">
+            <h5>FOLLOW US!</h5>
+            <i id="footerFacebook"></i>
+            <i id="footerInstagram"></i>
+            <i id="footerTwitter"></i>
+            <i id="footerSnapchat"></i>
+            <div class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                data-height="100" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/BakersfieldKE/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="row copyright">
+        <div class="col-sm-12">
+            <p>Copyrights © 2018 All Rights Reserved By Bakersfield Karting Experience | Built & Managed By
+                <strong>JustWeb</strong>
+            </p>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        $("input[type=button]").on("click", function () {            
+            $(".partyForm").removeClass("hide");
+            $(".packageBlock").addClass("hide");
+            let id = $(this).attr("id");
+            if (id === "jrabtn" || "adultabtn") {
+                $(`.${id}`).removeClass("hide");
+            } else if (id === "jrbbtn" || "adultbbtn") {
+                $(`.${id}`).removeClass("hide");
+            }
+        });
+
+        $(".goBack").on("click", function () {
+            $(".partyForm").addClass("hide");
+            $(".jrabtn").addClass("hide");
+            $(".jrbbtn").addClass("hide");
+            $(".adultabtn").addClass("hide");
+            $(".adultbbtn").addClass("hide");
+            $(".packageBlock").removeClass("hide");
+        });
+    </script>
+</body>
+
+</html>

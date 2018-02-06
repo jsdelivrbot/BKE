@@ -188,7 +188,6 @@ $("#popImg span").on("click", function () {
     $(modal).css("display", "none");
 });
 
-
 $(".sectionCards .col-sm-2").on("click", function(){
   let $icon = $(this).find("i").attr("id");
   
@@ -197,4 +196,20 @@ $(".sectionCards .col-sm-2").on("click", function(){
 
   $(`#${$icon}-div`).removeClass("hide");            
   $(`#${$icon}-div`).siblings().addClass("hide");
+});
+
+$(".sectionCards .col-sm-6").on("click", function(){
+  let $icon = $(this).find("i").attr("id");
+  
+  $(this).addClass("active");
+  $(this).siblings().removeClass("active");
+
+  $(`#${$icon}-div`).removeClass("hide");            
+  $(`#${$icon}-div`).siblings().addClass("hide");
+  $(".partyForm").addClass("hide");
+  $(".jrabtn").addClass("hide");
+  $(".jrbbtn").addClass("hide");
+  $(".adultabtn").addClass("hide");
+  $(".adultbbtn").addClass("hide");
+  $(".packageBlock").removeClass("hide");
 });
