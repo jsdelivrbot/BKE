@@ -86,7 +86,7 @@ app.post('/JrAPackage', (req, res) => {
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 587,
-        secure: false, // true for 465, false for other ports
+        secure: true, // true for 465, false for other ports
         auth: {
             user: 'nickrhollenbeck@gmail.com', // generated ethereal user
             pass: 'vbfadmin2251'  // generated ethereal password
