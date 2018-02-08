@@ -10,9 +10,10 @@
     "express-handlebars": "^3.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
+    "mailgun-js": "^0.14.2",
     "nodemailer": "^4.4.2"
   },
-  "engines":{
+  "engines": {
     "node": "8.9.4"
   },
   "devDependencies": {},

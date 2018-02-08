@@ -268,40 +268,32 @@ app.post('/send', (req,res) => {
     <ul>
         <li>First Name: ${req.body.FirstName}</li>
         <li>Last Name: ${req.body.LastName}</li>
-        <li>Email: ${req.body.Email}</li>        
+        <li>Email: ${req.body.Email}</li>                
     </ul>
-    <h3>Message</h3>
-    <p>${req.body.message}</p>
+    <h3>Message:</h3>
+    <p>${req.body.Message}</p>
     `;
 
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 587,
-        secure: false, // true for 465, false for other ports
-        auth: {
-            user: 'nickrhollenbeck@gmail.com', // generated ethereal user
-            pass: 'vbfadmin2251'  // generated ethereal password
-        }
-    });
-
-    // setup email data with unicode symbols
-    let mailOptions = {
-        from: '"Nodemailer Contact 👻" <nickrhollenbeck@gmail.com>', // sender address
-        to: 'nick@justweb.design', // list of receivers
-        subject: 'Node Contact Request', // Subject line
-        text: 'Hello world?', // plain text body
-        html: output // html body
+    var api_key = 'key-5fa47c8dc8ba51f3151371d4a4ed670b';
+    var domain = 'sandbox84d129036ae14795bbf72dada597e65e.mailgun.org';
+    var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+    
+    var data = {
+    from: 'BKE Contact Inquiry <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
+    to: 'nick@justweb.design',
+    subject: 'Hello From Mailgun App',
+    text: 'Hello',
+    html: output
     };
-
-    // send mail with defined transport object
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);        
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));        
+    
+    mailgun.messages().send(data, function (error, body) {
+    console.log(data);
+    console.log(body);
+    if(!error){
         res.render('contact', {msg: 'Email has been sent!'});
+    } else{
+        res.render('contact', {msg: 'There was an issue sending this message please try again later.'});
+    }
     });
 });
 
