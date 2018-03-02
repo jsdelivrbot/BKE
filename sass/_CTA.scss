@@ -41,8 +41,11 @@
 }
 
 .cta-white{
-    input{
+    a{
         @include bke-red-btn();
+    }
+    a:hover {
+        @include bke-red-btn-hover();
     }
 }
 
@@ -51,7 +54,10 @@
     h1{
         color: $white-color;
     }
-    input {
+    a {
         @include bke-white-btn();
+    }
+    a:hover {
+        @include bke-red-btn-hover();
     }
 }

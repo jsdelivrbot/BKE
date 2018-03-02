@@ -32,6 +32,13 @@
     @include set-font($title-font, normal);
 }
 
+@mixin bke-red-btn-hover{
+    background-color: $white-color !important;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    @include set-font($title-font, normal);
+}
+
 @mixin bke-white-btn(){
     background-color: $white-color !important;
     color: $secondary-color !important;

@@ -1,11 +1,13 @@
 $(function () {
-
+  let openStatus = GetOpenStatus();
+  $('#openStatus').text(openStatus);
 });
 
 function GetOpenStatus(){
   let msg = '';
   let d = new Date();
   let h = d.getHours();
+
   //Sunday
   if(d.getDay() === 0){
     if(h < 11){

@@ -2363,6 +2363,9 @@ i {
   padding-top: 0.5%; }
   .topBanner #bannerLeft #sectionsLeft {
     margin-left: 10% !important; }
+    .topBanner #bannerLeft #sectionsLeft .col-xs-6 a {
+      color: white !important;
+      text-decoration: none !important; }
   @media screen and (max-width: 575px) {
     .topBanner #bannerLeft {
       display: none; } }
@@ -2481,9 +2484,16 @@ i {
 
 .navbar {
   background-color: #2b2b2b !important; }
+  .navbar img:first-child {
+    width: 7%; }
+    @media only screen and (max-width: 930px) {
+      .navbar img:first-child {
+        width: 80px !important; } }
   .navbar li {
     font-family: "Lato", sans-serif;
     font-weight: 700; }
+    .navbar li:hover {
+      cursor: pointer; }
   .navbar a {
     color: #fff !important; }
     @media screen and (max-width: 991px) {
@@ -2774,9 +2784,15 @@ a.slide_btn {
         font-size: 0.5rem;
         left: 0px; } }
 
-.cta-white input {
+.cta-white a {
   background-color: #bc1a1c;
   color: #fff;
+  font-family: "Coda Caption", sans-serif;
+  font-weight: normal; }
+.cta-white a:hover {
+  background-color: #fff !important;
+  color: #bc1a1c;
+  border: 1px solid #bc1a1c;
   font-family: "Coda Caption", sans-serif;
   font-weight: normal; }
 
@@ -2784,9 +2800,15 @@ a.slide_btn {
   background-color: #bc1a1c; }
   .cta-red h1 {
     color: #fff; }
-  .cta-red input {
+  .cta-red a {
     background-color: #fff !important;
     color: #2b2b2b !important;
+    font-family: "Coda Caption", sans-serif;
+    font-weight: normal; }
+  .cta-red a:hover {
+    background-color: #fff !important;
+    color: #bc1a1c;
+    border: 1px solid #bc1a1c;
     font-family: "Coda Caption", sans-serif;
     font-weight: normal; }
 
@@ -2848,6 +2870,36 @@ a.slide_btn {
       color: #bbb;
       text-decoration: none;
       cursor: pointer; }
+
+.imgGallery {
+  height: auto;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  padding-right: 15%; }
+  .imgGallery .galleryTitle {
+    width: 100%; }
+    .imgGallery .galleryTitle h1 {
+      color: #2b2b2b;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .imgGallery .galleryTitle h1 {
+          font-size: 25px; } }
+    .imgGallery .galleryTitle hr {
+      border-width: 2px;
+      width: 10%;
+      margin-top: 0px;
+      margin-bottom: 6%; }
+  .imgGallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-bottom: 5px; }
+    .imgGallery img:hover {
+      opacity: 0.7; }
 
 .highlightCards {
   height: auto;

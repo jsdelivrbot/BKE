@@ -34,13 +34,15 @@ i{ font-style: normal !important;}
     #bannerLeft{
         #sectionsLeft{
             margin-left: 10% !important;
+            .col-xs-6 a {
+                color: white !important;
+                text-decoration: none !important;
+            }
         }
         @media screen and (max-width: $iphonePlus) {
             display: none;
         }
     }
-    
-
     #bannerRight {
         position: relative;
         #sectionsRight {
@@ -157,6 +159,12 @@ i{ font-style: normal !important;}
 
 .navbar {
     background-color: $secondary-color !important;
+    img:first-child {
+        width: 7%;
+        @media only screen and (max-width: 930px){
+            width: 80px !important;
+        }
+    }
     li{
         @include set-font($body-font, 700);
         &:hover{
