@@ -1,3 +1,62 @@
+$(function () {
+
+});
+
+function GetOpenStatus(){
+  let msg = '';
+  let d = new Date();
+  let h = d.getHours();
+  //Sunday
+  if(d.getDay() === 0){
+    if(h < 11){
+      msg = 'Closed: Opening Today At 11am!';
+    }else if (h >= 20){
+      msg = 'Closed: Open Again Tuesday At 3pm!';
+    }else {
+      msg = 'Open Until 8pm Tonight!';
+    }
+  }
+
+  //Monday
+  if(d.getDay() === 1){
+    msg = 'Closed: Open Again Tuesday At 3pm!';
+  }
+
+  //Tuesday - Thursday 
+  if(d.getDay() >= 2 && d.getDay() <= 4){
+    if(h < 15){
+      msg = 'Closed: Opening Today At 3pm!';
+    }else if (h >= 22){
+      msg = 'Closed: Open Again Tomorrow At 3pm!';
+    }else {
+      msg = 'Open Until 10pm Tonight!';
+    }
+  }
+
+  //Friday
+  if(d.getDay() === 5){
+    if(h < 15){
+      msg = 'Closed: Opening Today At 3pm!';
+    }else if (h >= 24){
+      msg = 'Closed: Open Again Tomorrow At 11am!';
+    }else {
+      msg = 'Open Until Midnight Tonight!';
+    }
+  }
+
+  //Saturday
+  if(d.getDay() === 6){
+    if(h < 11){
+      msg = 'Closed: Opening Today At 11am!';
+    }else if (h >= 24){
+      msg = 'Closed: Open Again Tomorrow At 11am!';
+    }else {
+      msg = 'Open Until Midnight Tonight!';
+    }
+  }
+
+  return msg;
+};
 $('.slider').each(function() {
     var $this = $(this);
     var $group = $this.find('.slide_group');
@@ -109,8 +168,8 @@ $('.testimonial').each(function() {
       return;
     }
     
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
+    // bulletArray[currentIndex].removeClass('active');
+    // bulletArray[newIndex].addClass('active');
     
     if (newIndex > currentIndex) {
       slideLeft = '100%';
@@ -169,7 +228,6 @@ $('.testimonial').each(function() {
   
   advance();
 });
-
 
 //Image Gallery
 $(".imgGallery img").on("click", function () {
