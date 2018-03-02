@@ -20,6 +20,14 @@
     transition: all $speed ease-in-out;
 }
 
+@mixin full-banner-img($url){
+    background: url($url) no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 @mixin responsive-image(){
     width: 100%;
     height: auto;

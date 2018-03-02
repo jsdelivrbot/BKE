@@ -16,7 +16,7 @@ h6{
         }
 }
 
-li, span{
+li{
     font-family: $body-font !important; 
         &:selection {
             background-color: $primary-color !important;

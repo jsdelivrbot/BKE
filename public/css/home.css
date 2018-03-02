@@ -2350,9 +2350,9 @@ h6 {
   h6:selection {
     background-color: #bc1a1c !important; }
 
-li, span {
+li {
   font-family: "Lato", sans-serif !important; }
-  li:selection, span:selection {
+  li:selection {
     background-color: #bc1a1c !important; }
 
 i {
@@ -2642,6 +2642,34 @@ i {
     transform: scale(0); }
   to {
     transform: scale(1); } }
+#homeBannerSlider .carousel-item {
+  width: 100%;
+  height: 500px; }
+  #homeBannerSlider .carousel-item:first-of-type {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px; }
+    #homeBannerSlider .carousel-item:first-of-type span {
+      background-color: #bc1a1c;
+      padding: 0% 2%; }
+  #homeBannerSlider .carousel-item:nth-of-type(2) {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  #homeBannerSlider .carousel-item:nth-of-type(3) {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
 .slider {
   margin: 0 auto;
   max-width: 100%; }
