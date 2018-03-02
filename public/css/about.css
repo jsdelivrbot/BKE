@@ -2342,9 +2342,18 @@ h4,
 h5,
 h6 {
   font-family: "Coda Caption", sans-serif !important; }
+  h1:selection,
+  h2:selection,
+  h3:selection,
+  h4:selection,
+  h5:selection,
+  h6:selection {
+    background-color: #bc1a1c !important; }
 
-li, span {
+li {
   font-family: "Lato", sans-serif !important; }
+  li:selection {
+    background-color: #bc1a1c !important; }
 
 i {
   font-style: normal !important; }
@@ -2363,6 +2372,9 @@ i {
   padding-top: 0.5%; }
   .topBanner #bannerLeft #sectionsLeft {
     margin-left: 10% !important; }
+    .topBanner #bannerLeft #sectionsLeft .col-xs-6 a {
+      color: white !important;
+      text-decoration: none !important; }
   @media screen and (max-width: 575px) {
     .topBanner #bannerLeft {
       display: none; } }
@@ -2481,6 +2493,11 @@ i {
 
 .navbar {
   background-color: #2b2b2b !important; }
+  .navbar img:first-child {
+    width: 7%; }
+    @media only screen and (max-width: 930px) {
+      .navbar img:first-child {
+        width: 80px !important; } }
   .navbar li {
     font-family: "Lato", sans-serif;
     font-weight: 700; }
@@ -2533,6 +2550,12 @@ i {
     @media screen and (max-width: 575px) {
       .footer h5 {
         padding-top: 3%; } }
+  .footer .sitemap a {
+    display: block;
+    color: #fff;
+    text-decoration: none; }
+  .footer .sitemap a:hover {
+    font-weight: bold !important; }
   @media screen and (max-width: 575px) {
     .footer .sitemap {
       display: none; } }
@@ -2732,9 +2755,15 @@ i {
         font-size: 0.5rem;
         left: 0px; } }
 
-.cta-white input {
+.cta-white a {
   background-color: #bc1a1c;
   color: #fff;
+  font-family: "Coda Caption", sans-serif;
+  font-weight: normal; }
+.cta-white a:hover {
+  background-color: #fff !important;
+  color: #bc1a1c;
+  border: 1px solid #bc1a1c;
   font-family: "Coda Caption", sans-serif;
   font-weight: normal; }
 
@@ -2742,16 +2771,208 @@ i {
   background-color: #bc1a1c; }
   .cta-red h1 {
     color: #fff; }
-  .cta-red input {
+  .cta-red a {
     background-color: #fff !important;
     color: #2b2b2b !important;
     font-family: "Coda Caption", sans-serif;
     font-weight: normal; }
+  .cta-red a:hover {
+    background-color: #fff !important;
+    color: #bc1a1c;
+    border: 1px solid #bc1a1c;
+    font-family: "Coda Caption", sans-serif;
+    font-weight: normal; }
 
-.bannerImg {
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+#homeBannerSlider .carousel-item {
+  width: 100%;
+  height: 500px; }
+  #homeBannerSlider .carousel-item:first-of-type {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px; }
+    #homeBannerSlider .carousel-item:first-of-type span {
+      background-color: #bc1a1c;
+      padding: 0% 2%; }
+  #homeBannerSlider .carousel-item:nth-of-type(2) {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  #homeBannerSlider .carousel-item:nth-of-type(3) {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+#aboutBanner .carousel-item {
   width: 100%;
   height: 400px;
-  background-color: orange; }
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520033564/BKE/Slider/aboutbanner_dark.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #aboutBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+.slider {
+  margin: 0 auto;
+  max-width: 100%; }
+  .slider .slide_viewer {
+    height: 440px;
+    overflow: hidden;
+    position: relative; }
+    .slider .slide_viewer .slide_group {
+      height: 100%;
+      position: relative;
+      width: 100%; }
+      .slider .slide_viewer .slide_group .slide {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%; }
+      .slider .slide_viewer .slide_group .slide:first-child {
+        display: block; }
+      .slider .slide_viewer .slide_group .slide:nth-of-type(1) {
+        background: url(http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        padding-top: 5%; }
+        .slider .slide_viewer .slide_group .slide:nth-of-type(1) h1 {
+          background-color: #bc1a1c;
+          background-color: rgba(188, 26, 28, 0.8);
+          padding: 2% 0%; }
+        .slider .slide_viewer .slide_group .slide:nth-of-type(1) h6 {
+          padding: 0% 30%; }
+      .slider .slide_viewer .slide_group .slide:nth-of-type(2) {
+        background: #F4E4CD; }
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 52%; }
+  @media screen and (max-width: 992px) {
+    .slide_buttons {
+      display: none; } }
+
+a.slide_btn {
+  color: #2b2b2b !important;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.slide_btn.active, .slide_btn:hover {
+  color: #bc1a1c !important;
+  cursor: pointer; }
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: -340px; }
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0; }
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0; }
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 65px; }
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1; }
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px; }
+
+  .next_btn {
+    right: 50px; } }
+.testimonial {
+  margin: 0 auto;
+  max-width: 100%; }
+  .testimonial .slide {
+    padding-top: 150px;
+    text-align: center; }
+  .testimonial img {
+    border-radius: 50%; }
+  .testimonial h6 {
+    padding-top: 1%;
+    text-align: center; }
+  .testimonial p {
+    margin-bottom: 0rem !important; }
+  .testimonial p:first-of-type {
+    margin-top: 0.3rem !important; }
+  .testimonial .slide_viewer {
+    height: 440px;
+    overflow: hidden;
+    position: relative; }
+    .testimonial .slide_viewer .slide_group {
+      height: 100%;
+      position: relative;
+      width: 100%; }
+      .testimonial .slide_viewer .slide_group .slide {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%; }
+      .testimonial .slide_viewer .slide_group .slide:first-child {
+        display: block; }
+      .testimonial .slide_viewer .slide_group .slide:nth-of-type(1) {
+        background: #F9F9F9; }
+      .testimonial .slide_viewer .slide_group .slide:nth-of-type(2) {
+        background: #F9F9F9; }
+      .testimonial .slide_viewer .slide_group .slide:nth-of-type(3) {
+        background: #F9F9F9; }
 
 .bkeHighlight {
   padding: 5% 15%;
@@ -2792,5 +3013,10 @@ i {
 
 .imgGallery {
   background-color: #F9F9F9; }
+  @media screen and (max-width: 768px) {
+    .imgGallery #galleryGrid {
+      display: none !important; }
+    .imgGallery #gallerySlider {
+      display: block !important; } }
 
 /*# sourceMappingURL=about.css.map */

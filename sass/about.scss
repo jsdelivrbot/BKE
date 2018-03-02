@@ -3,13 +3,10 @@
 @import "custom-mixin";
 @import "gallery";
 @import "CTA";
+@import "slider";
 
 
-.bannerImg{
-    width: 100%;
-    height: 400px;
-    background-color: orange;
-}
+
 
 .bkeHighlight{
     padding: 5% 15%;
@@ -56,4 +53,12 @@
 
 .imgGallery{
     background-color: $light-grey-color;
+    @media screen and (max-width: $ipad) {
+        #galleryGrid {
+            display: none !important;
+        }
+        #gallerySlider {
+            display: block !important;
+        }
+    }
 }

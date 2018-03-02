@@ -29,7 +29,22 @@ $white-color: #fff;
       @include full-banner-img('http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg');
     }
   }
+}
 
+#aboutBanner {
+  .carousel-item {
+    width: 100%;
+    height: 400px;
+    @include full-banner-img('http://res.cloudinary.com/dardtedz8/image/upload/v1520033564/BKE/Slider/aboutbanner_dark.jpg');
+    text-align: center;
+    color: $white-color;
+    padding-top: 150px;
+    span{
+      $title-font: 'Coda Caption', sans-serif !important;
+      background-color: $primary-color;
+      padding: 0% 2%;
+    }
+  }
 }
 
 .slider {
