@@ -2541,6 +2541,12 @@ i {
     @media screen and (max-width: 575px) {
       .footer h5 {
         padding-top: 3%; } }
+  .footer .sitemap a {
+    display: block;
+    color: #fff;
+    text-decoration: none; }
+  .footer .sitemap a:hover {
+    font-weight: bold !important; }
   @media screen and (max-width: 575px) {
     .footer .sitemap {
       display: none; } }
@@ -2631,7 +2637,7 @@ i {
   margin: 0 auto;
   max-width: 100%; }
   .slider .slide_viewer {
-    height: 340px;
+    height: 440px;
     overflow: hidden;
     position: relative; }
     .slider .slide_viewer .slide_group {
@@ -2646,20 +2652,29 @@ i {
       .slider .slide_viewer .slide_group .slide:first-child {
         display: block; }
       .slider .slide_viewer .slide_group .slide:nth-of-type(1) {
-        background: #D7A151; }
+        background: url(http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        padding-top: 5%; }
+        .slider .slide_viewer .slide_group .slide:nth-of-type(1) h1 {
+          background-color: #bc1a1c;
+          background-color: rgba(188, 26, 28, 0.8);
+          padding: 2% 0%; }
+        .slider .slide_viewer .slide_group .slide:nth-of-type(1) h6 {
+          padding: 0% 30%; }
       .slider .slide_viewer .slide_group .slide:nth-of-type(2) {
         background: #F4E4CD; }
-      .slider .slide_viewer .slide_group .slide:nth-of-type(3) {
-        background: #C75534; }
-      .slider .slide_viewer .slide_group .slide:nth-of-type(4) {
-        background: #D1D1D4; }
 
 .slide_buttons {
   left: 0;
   position: absolute;
   right: 0;
   text-align: center;
-  top: 38%; }
+  top: 52%; }
   @media screen and (max-width: 992px) {
     .slide_buttons {
       display: none; } }
@@ -2722,10 +2737,18 @@ a.slide_btn {
 .testimonial {
   margin: 0 auto;
   max-width: 100%; }
-  .testimonial h1 {
-    position: relative;
-    top: 40%;
+  .testimonial .slide {
+    padding-top: 150px;
     text-align: center; }
+  .testimonial img {
+    border-radius: 50%; }
+  .testimonial h6 {
+    padding-top: 1%;
+    text-align: center; }
+  .testimonial p {
+    margin-bottom: 0rem !important; }
+  .testimonial p:first-of-type {
+    margin-top: 0.3rem !important; }
   .testimonial .slide_viewer {
     height: 440px;
     overflow: hidden;
@@ -2742,13 +2765,11 @@ a.slide_btn {
       .testimonial .slide_viewer .slide_group .slide:first-child {
         display: block; }
       .testimonial .slide_viewer .slide_group .slide:nth-of-type(1) {
-        background: #D7A151; }
+        background: #F9F9F9; }
       .testimonial .slide_viewer .slide_group .slide:nth-of-type(2) {
-        background: #F4E4CD; }
+        background: #F9F9F9; }
       .testimonial .slide_viewer .slide_group .slide:nth-of-type(3) {
-        background: #C75534; }
-      .testimonial .slide_viewer .slide_group .slide:nth-of-type(4) {
-        background: #D1D1D4; }
+        background: #F9F9F9; }
 
 .cta {
   height: 100px;

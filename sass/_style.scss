@@ -228,6 +228,14 @@ i{ font-style: normal !important;}
           } 
     }
     .sitemap{
+        a {
+            display: block;
+            color: $white-color;
+            text-decoration: none;
+        }
+        a:hover {
+            font-weight: bold !important;
+        }
         @media screen and (max-width: $iphonePlus) {
           display: none;
         } 

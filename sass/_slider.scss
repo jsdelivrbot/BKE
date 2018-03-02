@@ -10,7 +10,7 @@ $white-color: #fff;
     margin: 0 auto;
     max-width: 100%;
     .slide_viewer {
-        height: 340px;
+        height: 440px;
         overflow: hidden;
         position: relative;
         .slide_group {
@@ -28,20 +28,27 @@ $white-color: #fff;
               }
               
               .slide:nth-of-type(1) {
-                background: #D7A151;
+                background: url(http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg) no-repeat center center fixed;  
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                text-align: center;
+                color: $white-color;
+                padding-top: 5%;
+                h1{
+                  background-color: $primary-color;
+                  @include background-opacity-layer($primary-color-rgb, 0.8);
+                  padding: 2% 0%;
+                }
+                h6{
+                  padding: 0% 30%;
+                }
               }
               
               .slide:nth-of-type(2) {
                 background: #F4E4CD;
-              }
-              
-              .slide:nth-of-type(3) {
-                background: #C75534;
-              }
-              
-              .slide:nth-of-type(4) {
-                background: #D1D1D4;
-              }
+              }              
           }
       }
   }
@@ -51,7 +58,7 @@ $white-color: #fff;
     position: absolute;
     right: 0;
     text-align: center;
-    top: 38%;
+    top: 52%;
     @media screen and (max-width: 992px) {
       display:none;
     }
@@ -121,10 +128,22 @@ a.slide_btn {
 .testimonial {
   margin: 0 auto;
   max-width: 100%;
-  h1{
-    position: relative;
-    top: 40%;
+  .slide{
+    padding-top: 150px;
     text-align: center;
+  }
+  img{
+    border-radius: 50%;
+  }
+  h6{
+    padding-top: 1%;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 0rem !important;
+  }
+  p:first-of-type{
+    margin-top: 0.3rem !important;
   }
   .slide_viewer {
       height: 440px;
@@ -145,20 +164,16 @@ a.slide_btn {
             }
             
             .slide:nth-of-type(1) {
-              background: #D7A151;
+              background: $light-grey-color;
             }
             
             .slide:nth-of-type(2) {
-              background: #F4E4CD;
+              background: $light-grey-color;
             }
             
             .slide:nth-of-type(3) {
-              background: #C75534;
-            }
-            
-            .slide:nth-of-type(4) {
-              background: #D1D1D4;
-            }
+              background: $light-grey-color;
+            }            
         }
     }
 }

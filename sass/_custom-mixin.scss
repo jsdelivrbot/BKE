@@ -25,6 +25,9 @@
     height: auto;
 }
 
+@mixin background-opacity-layer($rgbColor, $a){
+    background-color: rgba($rgbColor, $a);
+}
 
 @mixin bke-red-btn(){
     background-color: $primary-color;
