@@ -9,9 +9,19 @@ h2,
 h3,
 h4,
 h5,
-h6{font-family: $title-font !important}
+h6{
+    font-family: $title-font !important; 
+        &:selection {
+            background-color: $primary-color !important;
+        }
+}
 
-li, span{font-family: $body-font !important}
+li, span{
+    font-family: $body-font !important; 
+        &:selection {
+            background-color: $primary-color !important;
+        }
+    }
 
 i{ font-style: normal !important;}
 
