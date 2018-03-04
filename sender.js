@@ -65,12 +65,13 @@ app.get('/contact', (req, res) => {
 });
 
 
-app.post('/JrAPackage', (req, res) => {
+app.post('/JrPackage', (req, res) => {
+    console.log(req);
     const output = `
     <p>You have a new party request!</p>
     <h3>Contact Details</h3>
     <ul>
-        <li>Party Type: Jr. Kart Party Package A</li>
+        <li>Party Type: ${req.body.PackageType}</li>
         <li>Full Name: ${req.body.FullName}</li>
         <li>Email: ${req.body.Email}</li>
         <li>Phone: ${req.body.Phone}</li>  
@@ -105,52 +106,12 @@ app.post('/JrAPackage', (req, res) => {
     });
 });
 
-app.post('/JrBPackage', (req, res) => {
+app.post('/AdultPackage', (req, res) => {
     const output = `
     <p>You have a new party request!</p>
     <h3>Contact Details</h3>
     <ul>
-        <li>Party Type: Jr. Kart Party Package B</li>
-        <li>Full Name: ${req.body.FullName}</li>
-        <li>Email: ${req.body.Email}</li>
-        <li>Phone: ${req.body.Phone}</li>  
-        <li>Date & Time: ${req.body.DateTime}</li>  
-        <li>Child's Name: ${req.body.ChildName}</li>        
-        <li>Number of Kids: ${req.body.NumberOfKids}</li>  
-        <li>Pizza Type: ${req.body.Pizza}</li>  
-        <li>Shirt Size: ${req.body.ShirtSize}</li>  
-    </ul>
-    `;
-
-    var api_key = 'key-5fa47c8dc8ba51f3151371d4a4ed670b';
-    var domain = 'sandbox84d129036ae14795bbf72dada597e65e.mailgun.org';
-    var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
-    
-    var data = {
-    from: 'BKE Party Reservation <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
-    to: 'nick@justweb.design',
-    subject: 'Jr Kart B Package Party Reservation',
-    text: 'Hello',
-    html: output
-    };
-    
-    mailgun.messages().send(data, function (error, body) {
-    console.log(data);
-    console.log(body);
-    if(!error){
-        res.render('parties', {msg: 'Email has been sent!'});
-    } else{
-        res.render('parties', {msg: 'There was an issue sending this message please try again later.'});
-    }
-    });
-});
-
-app.post('/AdultAPackage', (req, res) => {
-    const output = `
-    <p>You have a new party request!</p>
-    <h3>Contact Details</h3>
-    <ul>
-        <li>Party Type: Adult Kart Party Package A</li>
+        <li>Party Type: ${req.body.PackageType}</li>
         <li>Full Name: ${req.body.FullName}</li>
         <li>Email: ${req.body.Email}</li>
         <li>Phone: ${req.body.Phone}</li>  
@@ -170,46 +131,6 @@ app.post('/AdultAPackage', (req, res) => {
     from: 'BKE Party Reservation <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
     to: 'nick@justweb.design',
     subject: 'Adult A Package Party Reservation',
-    text: 'Hello',
-    html: output
-    };
-    
-    mailgun.messages().send(data, function (error, body) {
-    console.log(data);
-    console.log(body);
-    if(!error){
-        res.render('parties', {msg: 'Email has been sent!'});
-    } else{
-        res.render('parties', {msg: 'There was an issue sending this message please try again later.'});
-    }
-    });
-});
-
-app.post('/AdultBPackage', (req, res) => {
-    const output = `
-    <p>You have a new party request!</p>
-    <h3>Contact Details</h3>
-    <ul>
-        <li>Party Type: Adult Kart Party Package B</li>
-        <li>Full Name: ${req.body.FullName}</li>
-        <li>Email: ${req.body.Email}</li>
-        <li>Phone: ${req.body.Phone}</li>  
-        <li>Date & Time: ${req.body.DateTime}</li>  
-        <li>Child's Name: ${req.body.ChildName}</li>        
-        <li>Number of Kids: ${req.body.NumberOfKids}</li>  
-        <li>Pizza Type: ${req.body.Pizza}</li>  
-        <li>Shirt Size: ${req.body.ShirtSize}</li>  
-    </ul>
-    `;
-
-    var api_key = 'key-5fa47c8dc8ba51f3151371d4a4ed670b';
-    var domain = 'sandbox84d129036ae14795bbf72dada597e65e.mailgun.org';
-    var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
-    
-    var data = {
-    from: 'BKE Party Reservation <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
-    to: 'nick@justweb.design',
-    subject: 'Adult B Package Party Reservation',
     text: 'Hello',
     html: output
     };

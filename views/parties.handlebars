@@ -129,59 +129,72 @@
                     <div class="row package">
                         <div class="col-sm-6">
                             <span>
-                                <h6>Package A</h6>
+                                <h6 data-package="A">Package A</h6>
                             </span>
                             <span class="price">
-                                <span class="dollarSign">$</span> 30
+                                <span class="dollarSign">$</span> 10
                                 <span class="racer">/Racer</span>
                             </span>
                             <hr id="headerhr">
-                            <p>10 LAP GO-KART RACE</p>
+                            <p>Pizza & Fountain Drinks</p>
                             <hr>
-                            <p>40 ARCADE TOKENS</p>
-                            <hr>
-                            <p>GROUP PHOTO ON THE BKE PODIUM</p>
-                            <hr>
-                            <p>1 HOUR IN PARTY ROOM</p>
-                            <hr>
-                            <p>PERONAL PARTY HOST</p>
-                            <hr>
-                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
-                            <hr>
-                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
-                            <hr>
-                            <p>1/2 OFF COUPON ON R/C RENTALS</p>
-                            <hr>
-                            <p>T-Shirt For Birthday Child</p>
-                            <hr>
-                            <p>*150 Non-Refundable Deposit Required Upon Booking</p>
-                            <input id="jrabtn" type="button" value="Book" class="btn">
+                            <p>10 ARCADE TOKENS</p>                                                       
+                            <input id="jrParty" data-package="A" type="button" value="Book" class="btn">
                         </div>
                         <div class="col-sm-6">
                             <span>
-                                <h6>Package B</h6>
+                                <h6 data-package="B">Package B</h6>
+                            </span>
+                            <span class="price">
+                                <span class="dollarSign">$</span> 15
+                                <span class="racer">/Racer</span>
+                            </span>
+                            <hr id="headerhr">
+                            <p>CHOICE: Pizza, Corn Dog, or Hot Dog</p>
+                            <hr>
+                            <p>20 ARCADE TOKENS</p>
+                            <hr>
+                            <p>Kids Crazy Kart Race(4+)</p>                                                        
+                            <input id="jrParty" data-package="B" type="button" value="Book" class="btn">
+                        </div>
+                    </div>
+                    <div class="row package">
+                        <div class="col-sm-6">
+                            <span>
+                                <h6 data-package="C">Package C</h6>
+                            </span>
+                            <span class="price">
+                                <span class="dollarSign">$</span> 20
+                                <span class="racer">/Racer</span>
+                            </span>
+                            <hr id="headerhr">
+                            <p>CHOICE: Pizza, Corn Dog, or Hot Dog</p>
+                            <hr>
+                            <p>20 ARCADE TOKENS</p>
+                            <hr>
+                            <p>CHOICE: Crazy Kart Race or 10 min R/C Session</p>
+                            <input id="jrParty" data-package="C" type="button" value="Book" class="btn">
+                        </div>
+                        <div class="col-sm-6">
+                            <span>
+                                <h6 data-package="D">Package D</h6>
                             </span>
                             <span class="price">
                                 <span class="dollarSign">$</span> 25
                                 <span class="racer">/Racer</span>
                             </span>
                             <hr id="headerhr">
-                            <p>10 LAP GO-KART RACE</p>
+                            <p>CHOICE: Pizza, Corn Dog, or Hot Dog</p>
                             <hr>
-                            <p>20 ARCADE TOKENS</p>
+                            <p>Fountain Drinks</p>                            
                             <hr>
-                            <p>1 HOUR IN PARTY ROOM</p>
+                            <p>24 ARCADE TOKENS</p>
                             <hr>
-                            <p>PERONAL PARTY HOST</p>
+                            <p>CHOICE: Crazy Kart Session or 10 min R/C Session</p>                                                        
                             <hr>
-                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
+                            <p>Jr. Kart Race On Big Clay Track</p>
                             <hr>
-                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
-                            <hr>
-                            <p>T-Shirt For Birthday Child</p>
-                            <hr>
-                            <p class="last">*150 Non-Refundable Deposit Required Upon Booking</p>
-                            <input id="jrbbtn" type="button" value="Book" class="btn">
+                            <input id="jrParty" data-package="D" type="button" value="Book" class="btn">
                         </div>
                     </div>
                 </div>
@@ -193,11 +206,15 @@
                     <span class="goBack">Go Back</span>
                     <h5>It's Time To Party!!!</h3>
                 </div>
-                <form id="jraForm" class="jrabtn hide" action="JrAPackage" method="post">
+                <form class="jrParty hide" action="JrPackage" method="post">
                     <div class="form-row">
-                        <div class="col-sm-12">
-                            <label for="fullname">Full Name</label>
+                        <div class="col-sm-6">
+                            <label for="fullname">Parents Name</label>
                             <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="jrPackageType">Package Type</label>
+                            <input type="text" class="form-control" id="jrPackageType" name="PackageType" value="Package" readonly>
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="email">Email</label>
@@ -241,54 +258,6 @@
                     </div>
                     <button id="jraSubmit" type="submit" class="btn">Book Now!</button>
                 </form>
-                <form id="jrbForm" class="jrbbtn hide" action="JrBPackage" method="post">
-                    <div class="form-row">
-                        <div class="col-sm-12">
-                            <label for="fullname">Full Name</label>
-                            <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="Email" placeholder="Email">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="phone">Phone</label>
-                            <input class="form-control" type="tel" value="1-(555)-555-5555" name="Phone" id="example-tel-input">
-                        </div>
-                        <div class="form-group col-sm-12">
-                            <label for="dateTime">Date & Time</label>
-                            <input class="form-control" type="datetime-local" value="2018-08-19T13:45:00" name="DateTime" id="example-datetime-local-input">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="dateTime">Birthday Child's Name</label>
-                            <input class="form-control" type="text" value="Birthday Child's Name" name="ChildName" id="birthdayChild">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="numberofKids">Number Of Kids Attending The Party (Must Be Atleast 8)</label>
-                            <input class="form-control" type="number" min="8" value="8" name="NumberOfKids" id="numberofKids">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="typeofPizza">What Kind Of Pizza?</label>
-                            <select class="form-control" id="typeofPizza" name="Pizza">
-                                <option>Cheese Pizza</option>
-                                <option>Pepperoni Pizza</option>
-                                <option>Combination Pizza</option>
-                                <option>Pineapple & Canadian Bacon</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="ShirtSize">Size Of Shirt</label>
-                            <select class="form-control" id="ShirtSize" name="ShirtSize">
-                                <option>X-Small</option>
-                                <option>Small</option>
-                                <option>Medium</option>
-                                <option>Large</option>
-                                <option>X-Large</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button id="jrbSubmit" type="submit" class="btn">Book Now!</button>
-                </form>
             </div>
         </div>
         <div id="adultIcon-div" class="col-sm-12 main hide">
@@ -302,63 +271,25 @@
                     <br>
                     <br>
                     <div class="row package">
-                        <div class="col-sm-6">
+                        <div class="col-sm-12">
                             <span>
-                                <h6>Package A</h6>
+                                <h6 data-package="E">Package E</h6>
                             </span>
                             <span class="price">
-                                <span class="dollarSign">$</span> 35
+                                <span class="dollarSign">$</span> 25
                                 <span class="racer">/Racer</span>
                             </span>
                             <hr id="headerhr">
-                            <p>20 LAP GO-KART RACE</p>
+                            <p>CHOICE: Pizza, Corn Dog, or Hot Dog</p>
                             <hr>
-                            <p>40 ARCADE TOKENS</p>
+                            <p>Fountain Drinks</p>
                             <hr>
-                            <p>GROUP PHOTO ON THE BKE PODIUM</p>
+                            <p>30 Tokens</p>
                             <hr>
-                            <p>1 HOUR IN PARTY ROOM</p>
+                            <p>Jr. or Adult Kart Race</p>
                             <hr>
-                            <p>PERONAL PARTY HOST</p>
-                            <hr>
-                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
-                            <hr>
-                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
-                            <hr>
-                            <p>1/2 OFF COUPON ON R/C RENTALS</p>
-                            <hr>
-                            <p>T-Shirt For Birthday Child</p>
-                            <hr>
-                            <p>Medals For Each Racer</p>
-                            <hr>
-                            <p>*150 Non-Refundable Deposit Required Upon Booking</p>
-                            <input id="adultabtn" type="button" value="Book" class="btn">
-                        </div>
-                        <div class="col-sm-6">
-                            <span>
-                                <h6>Package B</h6>
-                            </span>
-                            <span class="price">
-                                <span class="dollarSign">$</span> 28
-                                <span class="racer">/Racer</span>
-                            </span>
-                            <hr id="headerhr">
-                            <p>20 LAP GO-KART RACE</p>
-                            <hr>
-                            <p>20 ARCADE TOKENS</p>
-                            <hr>
-                            <p>1 HOUR IN PARTY ROOM</p>
-                            <hr>
-                            <p>PERONAL PARTY HOST</p>
-                            <hr>
-                            <p>TABLECLOTHS, PLATES, NAPKINS, AND UTENSILS</p>
-                            <hr>
-                            <p>PIZZA AND DRINKS FOR EACH RACER</p>
-                            <hr>
-                            <p>T-Shirt For Birthday Child</p>
-                            <hr>
-                            <p class="last">*150 Non-Refundable Deposit Required Upon Booking</p>
-                            <input id="adultbbtn" type="button" value="Book" class="btn">
+                            <p>2 10 min R/C Rental Session</p>                            
+                            <input id="adultParty" data-package="E" type="button" value="Book" class="btn">
                         </div>
                     </div>
                 </div>
@@ -370,11 +301,15 @@
                     <span class="goBack">Go Back</span>
                     <h5>It's Time To Party!!!</h3>
                 </div>
-                <form class="adultabtn hide" action="AdultAPackage" method="post">
+                <form class="adultParty hide" action="AdultPackage" method="post">
                     <div class="form-row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <label for="fullname">Full Name</label>
                             <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
+                        </div>
+                         <div class="col-sm-6">
+                            <label for="adultPackageType">Package Type</label>
+                            <input type="text" class="form-control" id="adultPackageType" name="PackageType" value="Package" readonly>
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="email">Email</label>
@@ -417,54 +352,6 @@
                         </div>
                     </div>
                     <button id="adultaSubmit" type="submit" class="btn">Book Now!</button>
-                </form>
-                <form class="adultbbtn hide" action="AdultBPackage" method="post">
-                    <div class="form-row">
-                        <div class="col-sm-12">
-                            <label for="fullname">Full Name Package</label>
-                            <input type="text" class="form-control" id="fullname" name="FullName" placeholder="Full Name">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="Email" placeholder="Email">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="phone">Phone</label>
-                            <input class="form-control" type="tel" value="1-(555)-555-5555" name="Phone" id="example-tel-input">
-                        </div>
-                        <div class="form-group col-sm-12">
-                            <label for="dateTime">Date & Time</label>
-                            <input class="form-control" type="datetime-local" value="2018-08-19T13:45:00" name="DateTime" id="example-datetime-local-input">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="dateTime">Birthday Child's Name</label>
-                            <input class="form-control" type="text" value="Birthday Child's Name" name="ChildName" id="birthdayChild">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="numberofKids">Number Of Kids Attending The Party (Must Be Atleast 8)</label>
-                            <input class="form-control" type="number" min="8" value="8" name="NumberOfKids" id="numberofKids">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="typeofPizza">What Kind Of Pizza?</label>
-                            <select class="form-control" id="typeofPizza" name="Pizza">
-                                <option>Cheese Pizza</option>
-                                <option>Pepperoni Pizza</option>
-                                <option>Combination Pizza</option>
-                                <option>Pineapple & Canadian Bacon</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label for="ShirtSize">Size Of Shirt</label>
-                            <select class="form-control" id="ShirtSize" name="ShirtSize">
-                                <option>X-Small</option>
-                                <option>Small</option>
-                                <option>Medium</option>
-                                <option>Large</option>
-                                <option>X-Large</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button id="adultbSubmit" type="submit" class="btn">Book Now!</button>
                 </form>
             </div>
         </div>
@@ -525,14 +412,17 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/app.js"></script>
     <script>
-        $("input[type=button]").on("click", function () {            
+        $("input[type=button]").on("click", function () {    
+            let packageType = $(this).attr('data-package');    
             $(".partyForm").removeClass("hide");
             $(".packageBlock").addClass("hide");
             let id = $(this).attr("id");
-            if (id === "jrabtn" || "adultabtn") {
+            if (id === "jrParty") {
                 $(`.${id}`).removeClass("hide");
-            } else if (id === "jrbbtn" || "adultbbtn") {
+                $('#jrPackageType').val(`Package ${packageType}`);
+            } else if (id === "adultParty") {
                 $(`.${id}`).removeClass("hide");
+                $('#adultPackageType').val(`Package ${packageType}`);
             }
         });
 
@@ -543,7 +433,7 @@
             $(".adultabtn").addClass("hide");
             $(".adultbbtn").addClass("hide");
             $(".packageBlock").removeClass("hide");
-        });
+        });        
     </script>
 </body>
 
