@@ -31,6 +31,11 @@
     width: 100%;
     height: auto;
     padding: 0% 10% 1% 10%;    
+    h6{
+        @media only screen and (max-width: $ipad){
+            font-size: 0.7rem !important;
+        }
+    }
     .col-sm-2{
         border: 1px solid $secondary-color;
         border-radius: 5px;
@@ -156,6 +161,19 @@
         padding: 0% 5% 3% 5%;    
         .btn-link {
             color: $secondary-color !important;
+        }
+    }
+}
+
+.FAQ {
+    button {
+        @media only screen  and (max-width: $androidTablet){
+            font-size: 0.7rem !important;
+        }
+    }
+    h5{
+        @media only screen and (max-width: $ipad){
+            font-size: 0.8rem !important;
         }
     }
 }
