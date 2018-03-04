@@ -47,6 +47,71 @@ $white-color: #fff;
   }
 }
 
+#pricingBanner {
+  .carousel-item {
+    width: 100%;
+    height: 400px;
+    @include full-banner-img('http://res.cloudinary.com/dardtedz8/image/upload/v1520138404/BKE/Slider/BKE_Bar.jpg');
+    text-align: center;
+    color: $white-color;
+    padding-top: 150px;
+    span{
+      $title-font: 'Coda Caption', sans-serif !important;
+      background-color: $primary-color;
+      padding: 0% 2%;
+    }
+  }
+}
+
+#eventBanner {
+  .carousel-item {
+    width: 100%;
+    height: 400px;
+    @include full-banner-img('http://res.cloudinary.com/dardtedz8/image/upload/v1520139073/BKE/Slider/eventsBanner.jpg');
+    text-align: center;
+    color: $white-color;
+    padding-top: 150px;
+    span{
+      $title-font: 'Coda Caption', sans-serif !important;
+      background-color: $primary-color;
+      padding: 0% 2%;
+    }
+  }
+}
+
+#partyBanner {
+  .carousel-item {
+    width: 100%;
+    height: 400px;
+    @include full-banner-img('http://res.cloudinary.com/dardtedz8/image/upload/v1520139304/BKE/Slider/partyBanner.jpg');
+    text-align: center;
+    color: $white-color;
+    padding-top: 150px;
+    span{
+      $title-font: 'Coda Caption', sans-serif !important;
+      background-color: $primary-color;
+      padding: 0% 2%;
+    }
+  }
+}
+
+
+#contactBanner {
+  .carousel-item {
+    width: 100%;
+    height: 400px;
+    @include full-banner-img('http://res.cloudinary.com/dardtedz8/image/upload/v1520139710/BKE/Slider/contactBanner.jpg');
+    text-align: center;
+    color: $white-color;
+    padding-top: 150px;
+    span{
+      $title-font: 'Coda Caption', sans-serif !important;
+      background-color: $primary-color;
+      padding: 0% 2%;
+    }
+  }
+}
+
 .slider {
     margin: 0 auto;
     max-width: 100%;

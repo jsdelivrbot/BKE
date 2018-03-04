@@ -2783,6 +2783,257 @@ i {
     font-family: "Coda Caption", sans-serif;
     font-weight: normal; }
 
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+#homeBannerSlider .carousel-item {
+  width: 100%;
+  height: 500px; }
+  #homeBannerSlider .carousel-item:first-of-type {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-top: 150px; }
+    #homeBannerSlider .carousel-item:first-of-type span {
+      background-color: #bc1a1c;
+      padding: 0% 2%; }
+  #homeBannerSlider .carousel-item:nth-of-type(2) {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  #homeBannerSlider .carousel-item:nth-of-type(3) {
+    background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+#aboutBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520033564/BKE/Slider/aboutbanner_dark.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #aboutBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#pricingBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520138404/BKE/Slider/BKE_Bar.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #pricingBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#eventBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520139073/BKE/Slider/eventsBanner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #eventBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#partyBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520139304/BKE/Slider/partyBanner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #partyBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#contactBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520139710/BKE/Slider/contactBanner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #contactBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+.slider {
+  margin: 0 auto;
+  max-width: 100%; }
+  .slider .slide_viewer {
+    height: 440px;
+    overflow: hidden;
+    position: relative; }
+    .slider .slide_viewer .slide_group {
+      height: 100%;
+      position: relative;
+      width: 100%; }
+      .slider .slide_viewer .slide_group .slide {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%; }
+      .slider .slide_viewer .slide_group .slide:first-child {
+        display: block; }
+      .slider .slide_viewer .slide_group .slide:nth-of-type(1) {
+        background: url(http://res.cloudinary.com/dardtedz8/image/upload/v1519966229/BKE/Slider/homebanner_dark.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+        padding-top: 5%; }
+        .slider .slide_viewer .slide_group .slide:nth-of-type(1) h1 {
+          background-color: #bc1a1c;
+          background-color: rgba(188, 26, 28, 0.8);
+          padding: 2% 0%; }
+        .slider .slide_viewer .slide_group .slide:nth-of-type(1) h6 {
+          padding: 0% 30%; }
+      .slider .slide_viewer .slide_group .slide:nth-of-type(2) {
+        background: #F4E4CD; }
+
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 52%; }
+  @media screen and (max-width: 992px) {
+    .slide_buttons {
+      display: none; } }
+
+a.slide_btn {
+  color: #2b2b2b !important;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.slide_btn.active, .slide_btn:hover {
+  color: #bc1a1c !important;
+  cursor: pointer; }
+
+.directional_nav {
+  height: 340px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: -340px; }
+
+.previous_btn {
+  bottom: 0;
+  left: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0; }
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 100px;
+  top: 0; }
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 65px; }
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1; }
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px; }
+
+  .next_btn {
+    right: 50px; } }
+.testimonial {
+  margin: 0 auto;
+  max-width: 100%; }
+  .testimonial .slide {
+    padding-top: 150px;
+    text-align: center; }
+  .testimonial img {
+    border-radius: 50%; }
+  .testimonial h6 {
+    padding-top: 1%;
+    text-align: center; }
+  .testimonial p {
+    margin-bottom: 0rem !important; }
+  .testimonial p:first-of-type {
+    margin-top: 0.3rem !important; }
+  .testimonial .slide_viewer {
+    height: 440px;
+    overflow: hidden;
+    position: relative; }
+    .testimonial .slide_viewer .slide_group {
+      height: 100%;
+      position: relative;
+      width: 100%; }
+      .testimonial .slide_viewer .slide_group .slide {
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%; }
+      .testimonial .slide_viewer .slide_group .slide:first-child {
+        display: block; }
+      .testimonial .slide_viewer .slide_group .slide:nth-of-type(1) {
+        background: #F9F9F9; }
+      .testimonial .slide_viewer .slide_group .slide:nth-of-type(2) {
+        background: #F9F9F9; }
+      .testimonial .slide_viewer .slide_group .slide:nth-of-type(3) {
+        background: #F9F9F9; }
+
 .bannerImg {
   width: 100%;
   height: 400px;
