@@ -17,10 +17,14 @@
     img{
         @include responsive-image();
         float:right;
+        margin-top: 10px;
     }
     .descblock1{
         .col-sm-6{
             position: relative;
+            @media only screen and (max-width: $iphone){
+                padding-bottom: 5% !important;
+            }
 
             p{
                 font-weight: bold;
