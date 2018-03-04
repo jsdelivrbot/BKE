@@ -18,6 +18,9 @@
     }
     .sideBar {
         border-right: 2px solid $secondary-color;
+        @media only screen and (max-width: $iphonePlus){
+            border: transparent;
+        }
     }
     #home{
         &:before{
@@ -44,6 +47,14 @@
     #success{
         color:$secondary-color;
     }
+
+    .col-sm-6{
+        @media only screen and (max-width: $ipad){
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+
     a {
         color: #404d5b;
         text-decoration: none;
@@ -60,7 +71,6 @@
         padding: 5em 0 0 0;
         font-size: 0.65em;
     }
-    
     .input {
         position: relative;
         z-index: 1;
@@ -188,6 +198,9 @@
             margin: 0 auto;       
             width: 90%;
             height: 100%;
+        }
+        @media only screen and (max-width: $ipad){
+            display: none;
         }
     }
 

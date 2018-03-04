@@ -2342,9 +2342,18 @@ h4,
 h5,
 h6 {
   font-family: "Coda Caption", sans-serif !important; }
+  h1:selection,
+  h2:selection,
+  h3:selection,
+  h4:selection,
+  h5:selection,
+  h6:selection {
+    background-color: #bc1a1c !important; }
 
-li, span {
+li {
   font-family: "Lato", sans-serif !important; }
+  li:selection {
+    background-color: #bc1a1c !important; }
 
 i {
   font-style: normal !important; }
@@ -2363,6 +2372,9 @@ i {
   padding-top: 0.5%; }
   .topBanner #bannerLeft #sectionsLeft {
     margin-left: 10% !important; }
+    .topBanner #bannerLeft #sectionsLeft .col-xs-6 a {
+      color: white !important;
+      text-decoration: none !important; }
   @media screen and (max-width: 575px) {
     .topBanner #bannerLeft {
       display: none; } }
@@ -2481,6 +2493,11 @@ i {
 
 .navbar {
   background-color: #2b2b2b !important; }
+  .navbar img:first-child {
+    width: 7%; }
+    @media only screen and (max-width: 930px) {
+      .navbar img:first-child {
+        width: 80px !important; } }
   .navbar li {
     font-family: "Lato", sans-serif;
     font-weight: 700; }
@@ -2533,6 +2550,12 @@ i {
     @media screen and (max-width: 575px) {
       .footer h5 {
         padding-top: 3%; } }
+  .footer .sitemap a {
+    display: block;
+    color: #fff;
+    text-decoration: none; }
+  .footer .sitemap a:hover {
+    font-weight: bold !important; }
   @media screen and (max-width: 575px) {
     .footer .sitemap {
       display: none; } }
@@ -2732,9 +2755,15 @@ i {
         font-size: 0.5rem;
         left: 0px; } }
 
-.cta-white input {
+.cta-white a {
   background-color: #bc1a1c;
   color: #fff;
+  font-family: "Coda Caption", sans-serif;
+  font-weight: normal; }
+.cta-white a:hover {
+  background-color: #fff !important;
+  color: #bc1a1c;
+  border: 1px solid #bc1a1c;
   font-family: "Coda Caption", sans-serif;
   font-weight: normal; }
 
@@ -2742,9 +2771,15 @@ i {
   background-color: #bc1a1c; }
   .cta-red h1 {
     color: #fff; }
-  .cta-red input {
+  .cta-red a {
     background-color: #fff !important;
     color: #2b2b2b !important;
+    font-family: "Coda Caption", sans-serif;
+    font-weight: normal; }
+  .cta-red a:hover {
+    background-color: #fff !important;
+    color: #bc1a1c;
+    border: 1px solid #bc1a1c;
     font-family: "Coda Caption", sans-serif;
     font-weight: normal; }
 
@@ -2760,6 +2795,9 @@ i {
     color: #bc1a1c; }
   .bkeInfo .sideBar {
     border-right: 2px solid #2b2b2b; }
+    @media only screen and (max-width: 575px) {
+      .bkeInfo .sideBar {
+        border: transparent; } }
   .bkeInfo #home:before {
     content: "";
     font-family: "Fontawesome";
@@ -2783,6 +2821,10 @@ i {
   font-size: 150%; }
   .contactBody #success {
     color: #2b2b2b; }
+  @media only screen and (max-width: 768px) {
+    .contactBody .col-sm-6 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important; } }
   .contactBody a {
     color: #404d5b;
     text-decoration: none;
@@ -2895,6 +2937,9 @@ i {
       margin: 0 auto;
       width: 90%;
       height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .contactBody .gMap {
+        display: none; } }
   .contactBody #contactBtn {
     margin-top: 2%;
     background-color: #bc1a1c;
