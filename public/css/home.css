@@ -2492,6 +2492,7 @@ i {
         font-size: 0.5rem; } }
 
 .navbar {
+  margin: 0% 4%;
   background-color: #2b2b2b !important; }
   .navbar img:first-child {
     width: 7%; }
@@ -2669,6 +2670,81 @@ i {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
+
+#aboutBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520033564/BKE/Slider/aboutbanner_dark.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #aboutBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#pricingBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520138404/BKE/Slider/BKE_Bar.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #pricingBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#eventBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520139073/BKE/Slider/eventsBanner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #eventBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#partyBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520139304/BKE/Slider/partyBanner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #partyBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
+
+#contactBanner .carousel-item {
+  width: 100%;
+  height: 400px;
+  background: url("http://res.cloudinary.com/dardtedz8/image/upload/v1520139710/BKE/Slider/contactBanner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px; }
+  #contactBanner .carousel-item span {
+    background-color: #bc1a1c;
+    padding: 0% 2%; }
 
 .slider {
   margin: 0 auto;
@@ -2959,6 +3035,12 @@ a.slide_btn {
     .imgGallery img:hover {
       opacity: 0.7; }
 
+#nav {
+  background-color: #2b2b2b; }
+
+@media only screen and (max-width: 768px) {
+  .fb-page {
+    display: none !important; } }
 .highlightCards {
   height: auto;
   width: 100%;

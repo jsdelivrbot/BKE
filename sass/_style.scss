@@ -32,7 +32,6 @@ i{ font-style: normal !important;}
 
 .container-fluid{
     padding: 0px !important;
-    background-color: #2b2b2b;
 }
 
 
@@ -167,7 +166,9 @@ i{ font-style: normal !important;}
     }
 }
     
-
+#nav {
+    background-color: $secondary-color;
+}
 .navbar {
     margin: 0% 4%;
     background-color: $secondary-color !important;

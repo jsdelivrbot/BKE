@@ -5,6 +5,15 @@
 @import "CTA";
 @import "gallery";
 
+
+
+@media only screen and (max-width: $ipad){
+    .fb-page{
+        display: none !important;
+    }
+}
+
+
 .highlightCards {
     height: auto;
     width: 100%;
