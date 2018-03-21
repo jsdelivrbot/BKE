@@ -56,6 +56,14 @@ app.get('/bke_e03', (req, res) => {
     res.render('bke_e03');
 });
 
+app.get('/bke_e04', (req, res) => {
+    res.render('bke_e04');
+});
+
+app.get('/bke_e05', (req, res) => {
+    res.render('bke_e05');
+});
+
 app.get('/parties', (req, res) => {
     res.render('parties');
 });
