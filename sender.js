@@ -92,12 +92,12 @@ app.post('/JrPackage', (req, res) => {
     `;
 
     var api_key = 'key-5fa47c8dc8ba51f3151371d4a4ed670b';
-    var domain = 'sandbox84d129036ae14795bbf72dada597e65e.mailgun.org';
+    var domain = 'mg.bakersfieldke.com';
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
     
     var data = {
-    from: 'BKE Party Reservation <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
-    to: 'nick@justweb.design',
+    from: 'BKE Party Reservation <postmaster@mg.bakersfieldke.com>',
+    to: 'natet@bakersfieldke.com, nickrhollenbeck@gmail.com',
     subject: 'Jr Kart A Package Party Reservation',
     text: 'Hello',
     html: output
@@ -132,12 +132,12 @@ app.post('/AdultPackage', (req, res) => {
     `;
 
     var api_key = 'key-5fa47c8dc8ba51f3151371d4a4ed670b';
-    var domain = 'sandbox84d129036ae14795bbf72dada597e65e.mailgun.org';
+    var domain = 'mg.bakersfieldke.com';
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
     
     var data = {
     from: 'BKE Party Reservation <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
-    to: 'nick@justweb.design',
+    to: 'natet@bakersfieldke.com, nickrhollenbeck@gmail.com',
     subject: 'Adult A Package Party Reservation',
     text: 'Hello',
     html: output
@@ -168,12 +168,12 @@ app.post('/send', (req,res) => {
     `;
 
     var api_key = 'key-5fa47c8dc8ba51f3151371d4a4ed670b';
-    var domain = 'sandbox84d129036ae14795bbf72dada597e65e.mailgun.org';
+    var domain = 'mg.bakersfieldke.com';
     var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
     
     var data = {
     from: 'BKE Contact Inquiry <postmaster@sandbox84d129036ae14795bbf72dada597e65e.mailgun.org>',
-    to: 'nick@justweb.design',
+    to: 'natet@bakersfieldke.com, nickrhollenbeck@gmail.com',
     subject: 'Hello From Mailgun App',
     text: 'Hello',
     html: output
