@@ -322,5 +322,12 @@ i{ font-style: normal !important;}
         @media screen and (max-width: $iphonePlus) {
             font-size: 10px;
           } 
+        a{
+            text-decoration: none;
+            
+            strong {
+                color: $secondary-color + 10 !important;
+            }
+        }
     }
 }

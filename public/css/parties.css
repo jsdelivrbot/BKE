@@ -2625,6 +2625,10 @@ i {
     @media screen and (max-width: 575px) {
       .copyright p {
         font-size: 10px; } }
+    .copyright p a {
+      text-decoration: none; }
+      .copyright p a strong {
+        color: #353535 !important; }
 
 @-webkit-keyframes zoom {
   from {
