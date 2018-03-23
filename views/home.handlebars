@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93170609-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-93170609-1');
+    </script>
     <link rel="apple-touch-icon" sizes="180x180" href="http://res.cloudinary.com/dardtedz8/image/upload/v1520208826/BKE/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="http://res.cloudinary.com/dardtedz8/image/upload/v1520208826/BKE/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="http://res.cloudinary.com/dardtedz8/image/upload/v1520208826/BKE/favicon/favicon-16x16.png">
@@ -17,7 +26,7 @@
     <meta name="description" content="Bakersfield Karting Experience is Bakersfield's #1 destination for family entertainment. We have it all,
     from Racing for ALL ages, to R/C cars, & Arcade games. At BKE there is fun to be had from all ages!">
 
-    
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/home.css">
 
@@ -109,7 +118,8 @@
         </div>
         <div id="homeBannerSlider" class="carousel slide" data-ride="carousel" data-interval="false">
             <ol class="carousel-indicators">
-                {{!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                {{!--
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> --}}
             </ol>
@@ -120,12 +130,14 @@
                     </h1>
                     <p>BAKERSFIELD'S #1 DESTINATION FOR FAMILY ENTERTAINMENT!</p>
                 </div>
-                {{!-- <div class="carousel-item">
+                {{!--
+                <div class="carousel-item">
                 </div>
                 <div class="carousel-item">
                 </div> --}}
             </div>
-            {{!-- <a class="carousel-control-prev" href="#homeBannerSlider" role="button" data-slide="prev">
+            {{!--
+            <a class="carousel-control-prev" href="#homeBannerSlider" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
@@ -384,14 +396,26 @@
             <i id="footerInstagram"></i>
             <i id="footerTwitter"></i>
             <i id="footerSnapchat"></i>
-            <div style="display: none;" class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-height="150" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BakersfieldKE/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a></blockquote></div>
-            <div class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-height="150" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BakersfieldKE/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a></blockquote></div>
+            <div style="display: none;" class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-height="150"
+                data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/BakersfieldKE/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a>
+                </blockquote>
+            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/BakersfieldKE/" data-tabs="timeline" data-height="150" data-small-header="true"
+                data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/BakersfieldKE/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/BakersfieldKE/">Bakersfield Karting Experience</a>
+                </blockquote>
+            </div>
         </div>
     </div>
     <div class="row copyright">
         <div class="col-sm-12">
             <p>Copyrights © 2018 All Rights Reserved By Bakersfield Karting Experience | Built & Managed By
-                <a href="https://nickhollenbeck.com/"><strong>NICKHOLLENBECK</strong></a>
+                <a href="https://nickhollenbeck.com/">
+                    <strong>NICKHOLLENBECK</strong>
+                </a>
             </p>
         </div>
     </div>
